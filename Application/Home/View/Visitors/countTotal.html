@@ -1,0 +1,163 @@
+<extend name="Public:base"/>
+<block name="headjs"></block>
+
+<block name="body">
+
+
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">庐山总人流量统计</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="__URL__/countTotal" method="get" >
+						<div class="col-sm-3">
+							<input type="text" value="{$searchDate}" class="form-control" name='searchDate' id="searchDate" placeholder="请选择日期">
+						</div>
+
+
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                   <div id="main" style="height:400px"></div>
+	                </table><br/>
+  							
+	        </div>
+	    </div>
+	</div>
+</div>
+
+         
+</block>
+
+<block name="footjs">
+<link href="__PUBLIC__/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>  
+
+<!--Bootstrap Date Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/bootstrap-datetimepicker.js"></script>
+
+<!--Bootstrap Time Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-timepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/moment.js"></script>
+<script src="__PUBLIC__/js/datetime/daterangepicker.js"></script>
+<script src="__PUBLIC__/js/echarts.min.js"></script>
+
+<script type="text/javascript">
+
+$("#searchDate").daterangepicker({
+	format:"YYYY-MM-DD",
+	separator : '__',
+	locale:{
+		applyLabel:"确定",
+		cancelLabel:"取消",
+		fromLabel:"从",
+		toLabel:"到"
+	}
+});
+$("#scenic_spot_id").select2();
+	
+$(function(){
+	var data = {$data};
+	var legend = {$legend};
+	
+	 var myChart = echarts.init(document.getElementById('main')); 
+       var option = {
+    		    tooltip : {
+    		        trigger: 'item',
+    		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    		    },
+    		    legend: {
+    		        orient : 'vertical',
+    		        x : 'left',
+    		        data:legend
+    		    },
+    		    toolbox: {
+    		        show : true,
+    		        feature : {
+    		            mark : {show: true},
+    		            dataView : {show: true, readOnly: false},
+    		            magicType : {
+    		                show: true, 
+    		                type: ['pie', 'funnel'],
+    		                option: {
+    		                    funnel: {
+    		                        x: '25%',
+    		                        width: '50%',
+    		                        funnelAlign: 'center',
+    		                        max: 1548
+    		                    }
+    		                }
+    		            },
+    		            restore : {show: true},
+    		            saveAsImage : {show: true}
+    		        }
+    		    },
+    		    calculable : true,
+    		    series : [
+    		        {
+    		            name:'访问来源',
+    		            type:'pie',
+    		            radius : ['50%', '70%'],
+    		            itemStyle : {
+    		                normal : {
+    		                    label : {
+    		                        show : false
+    		                    },
+    		                    labelLine : {
+    		                        show : false
+    		                    }
+    		                },
+    		                emphasis : {
+    		                    label : {
+    		                        show : true,
+    		                        position : 'center',
+    		                        textStyle : {
+    		                            fontSize : '30',
+    		                            fontWeight : 'bold'
+    		                        }
+    		                    }
+    		                }
+    		            },
+    		            data:data
+    		        }
+    		    ]
+    		};
+    		                    
+       myChart.setOption(option);
+	
+})
+
+</script>
+
+
+</block>

@@ -1,0 +1,125 @@
+<extend name="Public:base" />
+
+
+<block name="body">
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">员工考勤</span>      
+                         </div>
+                         <div class="widget-body">
+                          
+    
+    									                     		   
+					                     		   
+					                             
+		
+		                    <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
+		                    	<div class='col-lg-4 col-lg-offset-3'>
+		                    	<if condition='$starttime eq "0"'>
+		                    		<a class="btn btn-palegreen save_check_work" starttime ="{$starttime}" detype='starttime' type="submit" id="saveRecord">{$today}员工上班考勤</a>
+		                    		<else/>
+		                    		<a class="btn " type="submit" id="saveRecord">上班已考勤({$starttime})</a>
+		                    	</if>
+		                    	</div>
+		                    	 <div class='col-lg-4 '>
+		                    	 <if condition='$endtime eq "0"'>
+		                    		<a class="btn btn-palegreen save_check_work" starttime ="{$starttime}" detype='endtime' type="submit" id="saveRecord" >{$today}员工下班考勤</a>
+		                         		<else/>
+		                    		<a class="btn " type="submit" id="saveRecord">下班已考勤({$endtime})</a>
+		                         </if>
+		                    	</div>
+		                    </div>
+					  
+    
+    
+    
+    
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
+
+ </block>
+ 
+<block name="footjs">
+<link href="__PUBLIC__/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>
+<script src="__PUBLIC__/js/datetime/bootstrap-timepicker.js"></script>  
+<script src="__PUBLIC__/js/datetime/bootstrap-datepicker.js"></script>
+
+<script src="__PUBLIC__/js/datetime/bootstrap-datetimepicker.js"></script>
+<style type="text/css">
+	.select2-container{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+</style>
+<script type="text/javascript">
+
+	$(function(){
+		$(".save_check_work").click(function(){
+			var detype = $(this).attr('detype');
+			if('starttime' == detype){
+				if(!confirm("确定进行上班考勤？确定后不能进行修改")){
+					return false;
+				}
+			}else{
+				
+				$starttime = $(this).attr('starttime');
+				if($starttime == '0'){
+					alert("你上班考勤没有完成，不能进行下班考勤");
+					return false;
+				}
+				
+				if(!confirm("确定进行下班考勤？确定后不能进行修改")){
+					return false;
+				}	
+				
+
+				
+			}
+			
+			location.href = "__URL__/save?detype="+detype;
+			
+		});
+	});
+
+	$("#scenic_spot_list_select").change(function(){
+		var scenic_spot_list_select = $("#scenic_spot_list_select").val();
+		$("#scenic_spot_list").val(scenic_spot_list_select);
+	});
+
+	$('.yearView').datetimepicker({
+		autoclose: true,
+		startView:3,minView:3,
+        lang:"ch",           
+        format:"yyyy-mm",      
+        timepicker:false,  
+    
+        minDate: 0,   
+  
+        });
+	
+$(".bfjl_img").click(function(){
+	//window.open($(this).attr('file'),'_blank');
+	var filepath = $(this).attr("file");
+	location.href = "__ROOT__/Home/Upload/downFile?filepath="+filepath;
+});
+
+
+
+</script>
+</block>

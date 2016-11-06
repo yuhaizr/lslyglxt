@@ -1,0 +1,32 @@
+[2016-01-25 22:44:45] 127.0.0.1 /Y2Game/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.021001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049003s ]
+
+[2016-01-25 22:44:46] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-01-25 22:45:22] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

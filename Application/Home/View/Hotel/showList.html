@@ -1,0 +1,142 @@
+<extend name="Public:base"/>
+<block name="headjs"></block>
+
+<block name="body">
+
+
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">景点列表</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="__URL__/showList" method="get" >
+   	                 <div class="search-box col-sm-3" >
+	                		<div>
+	                			<span class="input-icon">
+	                				<input type="text" name='searchValue' value="{$searchValue}" class="form-control" id="searchValue" placeholder="请输入酒店名称或者地址">
+	                				<i class="glyphicon glyphicon-search circular blue"></i>
+	                			</span>
+	                		</div> 
+	                	</div>	   
+	 
+	  
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                    <thead>
+	                        <tr role="row">
+	                        	<th>序号</th>
+	                            <th>创建时间</th>
+	                            <th>名称</th>
+	                            <th>酒店概况</th>
+	                            <th>酒店攻略</th>
+	                            <th>地址</th>
+	                            <th>创建年月</th>
+	                            <th>最近维修年月</th>
+	                            <th>人均单价(元/每晚)</th>
+	                            <th>星级</th>
+	                            <th>规模</th>
+	       	                    <th style="min-width: 150px">操作</th>
+	              
+	                        </tr>
+	                    </thead>
+	
+	                    <tbody id="tapeListTable">
+	                    	<foreach name="list" item="vo" key="key">
+		                        <tr>
+		                            <td>{$key+1}</td>
+		                            <td>{$vo.ctime}</td>
+		                            <td>{$vo.name}</td>
+		                            <td>{$vo.intro}</td>
+		                            <td>{$vo.strategy}</td>
+		                            <td>{$vo.addr}</td>
+		                            <td>{$vo.cyear}</td>
+		                            <td>{$vo.myear}</td>
+		                            <td>{$vo.average_price}</td>
+		                            <td>{$vo.start}</td>
+		                            <td>{$vo.totalnum}</td>
+		                            
+		          
+		                			<td>
+		                		
+		                			<a href="__URL__/detail?type=menu&id={$vo.id}" data-bb-handler="confirm" type="button"  class=" my_detail_btn btn btn-primary">详情</a>
+		           					<a href="__URL__/modify?type=menu&id={$vo.id}" data-bb-handler="confirm" type="button" style="display: none;" class=" my_modify_btn btn btn-primary">修改</a>
+		           					<a href="__URL__/del?type=menu&id={$vo.id}" data-bb-handler="confirm" type="button"    style="display: none;" class=" my_del_btn btn btn-danger  delete">删除</a>
+		                			</td>
+		          
+		             
+		                         
+		                        </tr>
+	                        </foreach>                        
+	                    </tbody>
+	                </table><br/>
+               <div class="row DTTTFooter">
+					<div class="col-sm-6">
+						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
+					</div>
+					<div class="col-sm-8 pull-right">
+						<div class="dataTables_paginate paging_bootstrap" id="simpledatatable_paginate">
+							<ul class="pagination" id="pageUl">
+								{$page}
+							</ul>
+						</div>
+					</div>				
+            	</div>  								
+	        </div>
+	    </div>
+	</div>
+</div>
+
+         
+</block>
+
+<block name="footjs">
+<link href="__PUBLIC__/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>  
+
+<!--Bootstrap Date Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/bootstrap-datetimepicker.js"></script>
+
+<!--Bootstrap Time Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-timepicker.js"></script>
+
+<script type="text/javascript">
+
+
+	
+
+
+</script>
+
+
+</block>

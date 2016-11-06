@@ -1,0 +1,1317 @@
+[2015-12-25 00:00:36] 127.0.0.1 /Y2Game/index.php/Home/Dept/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[2015-12-25 00:00:37] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:00:42] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptedit?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:00:45] 127.0.0.1 /Y2Game/index.php/Home/Dept/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:00:46] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:00:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:00:55] 127.0.0.1 /Y2Game/index.php/Home/dept/deptList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:02:18] 127.0.0.1 /Y2Game/index.php/Home/dept/deptList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:02:22] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:02:24] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:02:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(820)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(324)  insert  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\DimensionController.class.php(76)  add  
+File:()  dimensionadd  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dName' in 'field list'
+
+[2015-12-25 00:02:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(820)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(324)  insert  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\DimensionController.class.php(76)  add  
+File:()  dimensionadd  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dName' in 'field list'
+
+[2015-12-25 00:04:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(820)  execute  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(324)  insert  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\DimensionController.class.php(76)  add  
+File:()  dimensionadd  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dName' in 'field list'
+
+[2015-12-25 00:04:28] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:04:30] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:04:48] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:04:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:06:35] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:06:36] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:06:40] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:06:49] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:10:49] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 00:10:49] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:10:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:10:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:11:00] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:11:01] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:12:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:12:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:12:48] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:12:50] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:12:55] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:12:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:12:59] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:13:01] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 00:13:03] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:13:15] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 00:13:15] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:14:52] 127.0.0.1 /Y2Game/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.013001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039002s ]
+
+[2015-12-25 22:14:52] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:15:37] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:15:41] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:16:05] 127.0.0.1 /Y2Game/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:16:10] 127.0.0.1 /Y2Game/index.php/Home/dept/deptList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:16:17] 127.0.0.1 /Y2Game/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:16:22] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:17:53] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:18:00] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:18:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:18:29] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:18:29] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:27:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:27:43] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:27:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:28:07] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:28:10] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:28:12] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:28:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:29:05] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:29:05] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:30:17] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:30:17] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:30:22] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:30:24] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:30:28] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:31:42] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:31:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:31:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:31:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:31:57] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:31:59] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:32:02] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:32:09] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:33:22] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:33:23] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiontadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Controller.class.php(170)  E  
+File:()  __call  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(180)  invokeArgs  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: 非法操作:dimensiontadd
+
+[2015-12-25 22:34:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:34:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:34:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:34:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiontadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Controller.class.php(170)  E  
+File:()  __call  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(180)  invokeArgs  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: 非法操作:dimensiontadd
+
+[2015-12-25 22:35:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:35:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:35:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:35:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:35:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:35:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:36:00] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:37:13] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:37:13] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:37:13] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:37:32] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:37:32] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:38:19] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:38:24] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 22:38:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:38:39] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:39:22] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:39:26] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:39:26] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:39:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:39:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:40:05] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:40:05] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:41:38] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 22:41:44] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:41:44] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:43:40] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:43:41] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd/name/%E8%AF%B7%E9%97%AE/percent/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:04] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd/name/%E8%AF%B7%E9%97%AE/percent/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:44:08] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:44:16] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:44:18] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:22] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:27] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:28] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:44:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:38] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:44:43] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:44:44] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd/type/showadd/name/%E9%98%BF%E8%90%A8%E5%BE%B7/percent/3434.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:48:16] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:48:16] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:54:49] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:54:52] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:54:57] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:55:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:55:09] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:55:11] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:55:12] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 22:56:42] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:58:16] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 22:58:59] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 22:59:09] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:00:29] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:01:40] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:02:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:02:52] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:03:30] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:03:35] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:03:50] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:03:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:03:55] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:03:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:03:58] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:04:02] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:04:44] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:04] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:12] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:05:15] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:19] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 23:05:26] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:05:28] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:17:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:17:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Controller.class.php(170)  E  
+File:()  __call  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(180)  invokeArgs  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: 非法操作:Dimension
+
+[2015-12-25 23:17:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:17:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:18:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:18:08] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:18:09] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:18:31] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:21:38] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:22:02] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2015-12-25 23:24:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:24:11] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:24:23] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=2&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:24:43] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:24:46] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:24:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:24:51] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:25:41] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:25:47] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:25:52] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:25:59] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:26:35] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:26:39] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:27:25] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:27:33] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:27:33] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:27:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:27:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu#
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:27:37] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:27:38] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:28:52] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:28:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:29:33] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:29:37] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:30:27] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:30:31] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:30:35] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:31:10] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:31:15] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:31:16] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:31:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:32:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:34:10] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:34:24] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:34:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2015-12-25 23:35:50] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:35:54] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:35:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:43:01] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:43:06] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:43:07] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:43:11] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=3&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-25 23:43:15] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:43:19] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-25 23:43:21] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

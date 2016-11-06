@@ -1,0 +1,390 @@
+[2015-12-28 22:09:47] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:20:57] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[2015-12-28 22:21:15] 127.0.0.1 /Y2Game/index.php/Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:21:24] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[2015-12-28 22:22:07] 127.0.0.1 /Y2Game/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:22:07] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:22:12] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:F:\zendserver\Apache2\htdocs\Y2Game\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:F:\zendserver\Apache2\htdocs\Y2Game\ThinkPHP\ThinkPHP.php(97)  start  
+File:F:\zendserver\Apache2\htdocs\Y2Game\index.php(31)  require  
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[2015-12-28 22:23:57] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:24:00] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:24:45] 127.0.0.1 /Y2Game/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:25:00] 127.0.0.1 /Y2Game/index.php/Home/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:26:13] 127.0.0.1 /Y2Game/index.php/Home/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:26:14] 127.0.0.1 /Y2Game/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:26:41] 127.0.0.1 /Y2Game/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:26:43] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:26:50] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:26:52] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:27:19] 127.0.0.1 /Y2Game/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:27:32] 127.0.0.1 /Y2Game/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:27:42] 127.0.0.1 /Y2Game/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:27:49] 127.0.0.1 /Y2Game/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:01] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:03] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:08] 127.0.0.1 /Y2Game/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:28:10] 127.0.0.1 /Y2Game/index.php/Home/Role/roleUserList?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:17] 127.0.0.1 /Y2Game/index.php/Home/Role/useraddrole
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:28:17] 127.0.0.1 /Y2Game/index.php/Home/Role/roleUserList/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:28:24] 127.0.0.1 /Y2Game/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:26] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:28:31] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:28:32] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:42:24] 127.0.0.1 /Y2Game/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:42:25] 127.0.0.1 /Y2Game/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:42:36] 127.0.0.1 /Y2Game/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:42:37] 127.0.0.1 /Y2Game/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:42:42] 127.0.0.1 /Y2Game/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:42:46] 127.0.0.1 /Y2Game/index.php/Home/User/useredit?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:42:51] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:42:56] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptedit?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:43:07] 127.0.0.1 /Y2Game/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:43:56] 127.0.0.1 /Y2Game/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:44:15] 127.0.0.1 /Y2Game/index.php/Home/Log/logList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:44:38] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:45:05] 127.0.0.1 /Y2Game/index.php/Home/Dept/deptadd?type=show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:45:32] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:46:06] 127.0.0.1 /Y2Game/index.php/Home/User/modPass?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:50:39] 127.0.0.1 /Y2Game/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:50:42] 127.0.0.1 /Y2Game/index.php/Home/User/useradd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:58:23] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:58:28] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:58:29] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:58:32] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensiondelete?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:58:34] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:58:36] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd?type=showadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:58:45] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2015-12-28 22:58:48] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2015-12-28 22:58:56] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit?id=21&type=showedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[2015-12-28 22:59:00] 127.0.0.1 /Y2Game/index.php/Home/Dimension/dimensionedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

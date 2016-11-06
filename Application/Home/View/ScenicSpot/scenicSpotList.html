@@ -1,0 +1,306 @@
+<extend name="Public:base"/>
+<block name="headjs"></block>
+
+<block name="body">
+
+
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">景点列表</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="__URL__/scenicSpotList" method="get" >
+   	                 <div class="search-box col-sm-3" >
+	                		<div>
+	                			<span class="input-icon">
+	                				<input type="text" name='searchValue' value="{$searchValue}" class="form-control" id="searchValue" placeholder="请输入景点名称">
+	                				<i class="glyphicon glyphicon-search circular blue"></i>
+	                			</span>
+	                		</div> 
+	                	</div>	   
+	 
+	  
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                    <thead>
+	                        <tr role="row">
+	                        	<th>序号</th>
+	                            <th>创建时间</th>
+	                            <th>名称</th>
+	                            <th>景点概况</th>
+	                            <th>交通</th>
+	                            <th>门票</th>
+	                            <th>开放开始时间</th>
+	                            <th>开放结束时间</th>
+	                            <th>用时参考(分钟)</th>
+	       	                    <th>操作</th>
+	              
+	                        </tr>
+	                    </thead>
+	
+	                    <tbody id="tapeListTable">
+	                    	<foreach name="list" item="vo" key="key">
+		                        <tr>
+		                            <td>{$key+1}</td>
+		                            <td>{$vo.ctime}</td>
+		                            <td>{$vo.name}</td>
+		                            <td>{$vo.intro}</td>
+		                            <td>{$vo.traffic}</td>
+		                            <td>{$vo.ticket}</td>
+		                            <td>{$vo.start_time}</td>
+		                            <td>{$vo.end_time}</td>
+		                            <td>{$vo.playtime}</td>
+		          
+		                			<td>
+		                		
+		                			<a href="__URL__/addScenicSpot?type=menu&id={$vo.id}" data-bb-handler="confirm" type="button" class=" btn btn-primary">详情</a>
+		           
+		                			</td>
+		          
+		             
+		                         
+		                        </tr>
+	                        </foreach>                        
+	                    </tbody>
+	                </table><br/>
+               <div class="row DTTTFooter">
+					<div class="col-sm-6">
+						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
+					</div>
+					<div class="col-sm-8 pull-right">
+						<div class="dataTables_paginate paging_bootstrap" id="simpledatatable_paginate">
+							<ul class="pagination" id="pageUl">
+								{$page}
+							</ul>
+						</div>
+					</div>				
+            	</div>  								
+	        </div>
+	    </div>
+	</div>
+</div>
+
+           <div id="addRecordDiv" class="modal fade bs-example-modal-lg"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			        <div class="modal-dialog modal-lg">
+			            <div class="modal-content">
+			
+			                <div class="modal-header">
+			                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                    <h4 class="modal-title" id="mySmallModalLabel">合同信息记录</h4>
+			                </div>
+			                <div class="modal-body"> 
+			                   <!--未开户成功用户接单记录表开始  -->
+			               	   <div class="widget">
+							       <div class="widget-header ">
+							           <span class="widget-caption"></span>
+						               <div class="widget-buttons">
+						                    <a href="#" data-toggle="maximize">
+						                        <i class="fa fa-expand"></i>
+						                    </a>
+						                    <a href="#" data-toggle="collapse">
+						                        <i class="fa fa-minus"></i>
+						                    </a>
+						                    <a href="#" data-toggle="dispose">
+						                        <i class="fa fa-times"></i>
+						                    </a>
+						                </div>
+							       </div>
+						           <div class="widget-body">
+		
+					                   
+					                    
+			                		</div>
+			                	</div>
+			                	<!--未开户成功用户接单记录表结束  -->
+			                
+			                
+			                	<div class='row' id='sendMessageDiv'>
+												
+								</div>
+		
+				
+			                </div>
+							<div class="modal-footer">
+			
+							</div>			                
+			            </div>
+			        </div>
+			    </div>
+
+           <div id="addRecordTypeDiv" class="modal fade bs-example-modal-lg"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			        <div class="modal-dialog modal-lg">
+			            <div class="modal-content">
+			
+			                <div class="modal-header">
+			                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                    <h4 class="modal-title" id="mySmallModalLabel">合同信息类型</h4>
+			                </div>
+			                <div class="modal-body"> 
+			                   <!--未开户成功用户接单记录表开始  -->
+			               	   <div class="widget">
+							       <div class="widget-header ">
+							           <span class="widget-caption"></span>
+						               <div class="widget-buttons">
+						                    <a href="#" data-toggle="maximize">
+						                        <i class="fa fa-expand"></i>
+						                    </a>
+						                    <a href="#" data-toggle="collapse">
+						                        <i class="fa fa-minus"></i>
+						                    </a>
+						                    <a href="#" data-toggle="dispose">
+						                        <i class="fa fa-times"></i>
+						                    </a>
+						                </div>
+							       </div>
+						           <div class="widget-body">
+		
+					                    <form action="__URL__/addContractType" method="post" >
+					        
+					                    <div class='row'>
+				 					         <label class="col-lg-4 control-label" style="height: 34px;line-height: 34px;text-align: right;">类型名称</label>
+		                                     <div class="col-lg-4">
+		                                         <input type="text" class="form-control"  name="name" id="name" >
+		                                         
+		                                     </div>
+					                    </div>
+
+					                    <div class='row'>
+					                    	<div class='col-lg-4 col-lg-offset-5'>
+					                    	<input class="btn btn-palegreen" type="submit" id='addRecordTypeButton'  value="保存类型记录">
+					                    	</div>
+					                    </div>
+					               		</form>
+					                    
+			                		</div>
+			                	</div>
+			                	<!--未开户成功用户接单记录表结束  -->
+			                
+			                
+			                	<div class='row' id='sendMessageDiv'>
+												
+								</div>
+		
+				
+			                </div>
+							<div class="modal-footer">
+			
+							</div>			                
+			            </div>
+			        </div>
+			    </div>
+
+
+</block>
+
+<block name="footjs">
+<link href="__PUBLIC__/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>  
+
+<!--Bootstrap Date Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/bootstrap-datetimepicker.js"></script>
+
+<!--Bootstrap Time Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-timepicker.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		$("#searchtype").select2();
+		$("#addtype").select2();
+		$("#cuser_id").select2();
+	
+	
+
+	});
+
+	$("#addRecord").click(function(){
+		$("#addRecordDiv").modal('show');
+	});
+	
+	$("#addRecordType").click(function(){
+		$("#addRecordTypeDiv").modal('show');
+	});
+	
+	
+	$("#beginTime,#endTime").datetimepicker({
+
+	})
+	
+
+	 $("#saveRecord").click(function(){
+		var company_name = $("#company_name").val();
+		var username = $("#username").val();
+		var mobileno = $("#mobileno").val();
+		if(!company_name || !username || !mobileno){
+			alert('公司名称、姓名、手机号必填');
+			return false;
+		}
+
+	}); 
+
+	 $("#addRecordTypeButton").click(function(){
+		var name = $("#name").val();
+
+		if(!name){
+			alert('类型名称必填');
+			return false;
+		}
+		if(!confirm('确定要添加类型？')){
+			return false;
+		}
+
+	}); 
+	
+
+	
+	$(".bfjl_img").click(function(){
+		window.open($(this).attr('src'),'_blank');
+	});
+
+	$(".del_product").click(function(){
+		var wcglid = $(this).attr('wcglid');
+		
+		if(wcglid){
+			location.href = '__URL__/delProductJd?type=menu&id='+wcglid;
+		}else{
+			alert('参数缺失');
+		}
+		
+		
+	});
+
+</script>
+
+
+</block>

@@ -1,0 +1,102 @@
+<extend name="Public:base" />
+<block name="body">
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">编辑用户</span>
+                         </div>
+                         <div class="widget-body">
+                             <form id="registrationForm" action="__URL__/useredit" method="post" class="form-horizontal bv-form" data-bv-message="This value is not valid" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" novalidate="novalidate">
+                      
+              <!--                    <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">账号</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="account" required="required" value = "{$userinfo.account}">
+                                     </div>
+                                 </div> -->
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">昵　　称</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="nickname" value = "{$userinfo.nickname}">
+                                         
+                                     </div>
+                                 </div>
+                 <!--                  <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">角色</label>
+                                     <div class="col-lg-4">
+                            			 <select  id="role_id" name="role_id" style="width:100%">
+                                           	    <option value=''/>请选择角色
+												<foreach name="roleList" item="vo">
+												<option value="{$vo.id}" {$role_select[$vo['id']]}/>{$vo.name}
+												</foreach>
+										</select>
+                                     </div>
+                                 </div>  -->                           	 
+       
+                             
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">原　密  码(修改密码时必填)</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="oldpassword"  >
+                                     </div>
+                                 </div>
+                              
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">新　密  码(修改密码时必填)</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="password" >
+                                         
+                                     </div>
+                                 </div>
+
+
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">是否启用</label>
+                                     <div class="col-lg-8">
+                                         <input class="checkbox-slider slider-icon yesno" value="1" name="status" checked="checked" type="checkbox"><span class="text"></span></div>
+                                 </div>
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">备注说明</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="remark"  value = "{$userinfo.remark}">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <div class="col-lg-offset-5 col-lg-8">
+                                         <input class="btn btn-palegreen" type="submit" value="保存">
+                                     </div>
+                                 </div>
+                                 <input type="hidden" name="id" value="{$userinfo.id}"/>
+                             </form>
+                         </div>
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
+
+ </block>
+ 
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>   
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#role_id").select2();
+    //$("#registrationForm").bootstrapValidator();
+});
+</script>
+</block>

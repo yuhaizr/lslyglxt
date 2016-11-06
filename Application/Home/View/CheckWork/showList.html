@@ -1,0 +1,148 @@
+<extend name="Public:base"/>
+<block name="headjs"></block>
+
+<block name="body">
+
+
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">考勤列表</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="__URL__/showList" method="get" >
+	      				<div class="col-sm-3">
+							<input type="text" value="{$searchDate}" class="form-control" name='searchDate' id="searchDate" placeholder="请选择日期">
+						</div>
+						<if condition=' $is_show eq "1"'>
+   	                	 <div class="search-box col-sm-3" >
+                            <select  name="searchUid" id="searchUid" style="width:100%;">
+                            	<option value="">请选择工作人员</option>
+                            	<foreach name="userList" item="vo" key="key">
+                                   <option <if condition=" $vo['id'] eq $searchUid  " > selected = "selected" </if>  value="{$vo.id}" >{$vo.nickname}</option>
+                                </foreach>         
+                           	</select>
+   
+	                	</div>	 
+	                	</if>  
+	 
+	  
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                    <thead>
+	                        <tr role="row">
+	                        	<th>序号</th>
+	                            <th>日期</th>
+	                            <th>昵称</th>
+	                            <th>账号</th>
+	                            <th>上班考勤时间</th>
+	                            <th>下班考勤时间</th>
+	                           
+	       	                    <!-- <th style="min-width: 150px">操作</th> -->
+	              
+	                        </tr>
+	                    </thead>
+	
+	                    <tbody id="tapeListTable">
+	                    	<foreach name="list" item="vo" key="key">
+		                        <tr>
+		                            <td>{$key+1}</td>
+		                            <td>{$vo.date}</td>
+		                            <td>{$vo.nickname}</td>
+		                            <td>{$vo.account}</td>
+		                            <td>{$vo.starttime}</td>
+		                            <td>{$vo.endtime}</td>
+		                  
+		                         
+		                            
+		          
+		           
+		          
+		             
+		                         
+		                        </tr>
+	                        </foreach>                        
+	                    </tbody>
+	                </table><br/>
+               <div class="row DTTTFooter">
+					<div class="col-sm-6">
+						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
+					</div>
+					<div class="col-sm-8 pull-right">
+						<div class="dataTables_paginate paging_bootstrap" id="simpledatatable_paginate">
+							<ul class="pagination" id="pageUl">
+								{$page}
+							</ul>
+						</div>
+					</div>				
+            	</div>  								
+	        </div>
+	    </div>
+	</div>
+</div>
+
+         
+</block>
+
+<block name="footjs">
+<link href="__PUBLIC__/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>  
+
+<!--Bootstrap Date Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-datepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/bootstrap-datetimepicker.js"></script>
+
+<!--Bootstrap Time Picker-->
+<script src="__PUBLIC__/js/datetime/bootstrap-timepicker.js"></script>
+<script src="__PUBLIC__/js/datetime/moment.js"></script>
+<script src="__PUBLIC__/js/datetime/daterangepicker.js"></script>
+
+<script type="text/javascript">
+
+$("#searchDate").daterangepicker({
+	format:"YYYY-MM-DD",
+	separator : '__',
+	locale:{
+		applyLabel:"确定",
+		cancelLabel:"取消",
+		fromLabel:"从",
+		toLabel:"到"
+	}
+});
+$("#searchUid").select2();
+	
+
+
+</script>
+
+
+</block>

@@ -1,0 +1,23 @@
+<extend name="Public:base" />
+<block name="body">
+<div class="page-body" style="font-size: 40px;text-align: center;margin-top: 100px;">
+
+	欢迎{$_SESSION['loginUserName']}访问庐山旅游管理系统设计与实现
+</div>
+
+</block>
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //$("#registrationForm").bootstrapValidator();
+});
+</script>
+</block>

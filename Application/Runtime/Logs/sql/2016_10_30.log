@@ -1,0 +1,5 @@
+2016-10-30 10:37:55  2016-10-30 10:37:55  0
+   SELECT oyyq_user.id,oyyq_user.nickname,oyyq_role_user.role_id FROM oyyq_user  JOIN oyyq_role_user ON oyyq_role_user.user_id = oyyq_user.id  WHERE   oyyq_role_user.role_id in (1,2)  AND oyyq_user.status = 1
+
+
+

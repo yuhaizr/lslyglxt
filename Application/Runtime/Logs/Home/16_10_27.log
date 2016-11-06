@@ -1,0 +1,1462 @@
+[2016-10-27 22:32:37] ::1 /lslyglxt/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+
+[2016-10-27 22:32:38] ::1 /lslyglxt/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2016-10-27 22:32:42] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[2016-10-27 22:34:20] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[2016-10-27 22:34:25] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(68)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(29)  getNowPath  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(16)  saveLog  
+File:D:\WWW\lslyglxt\ThinkPHP\Common\functions.php(681)  __construct  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(89)  controller  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[2016-10-27 22:34:34] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(109)  E  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(1071)  connect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(140)  initConnect  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(68)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(29)  getNowPath  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(16)  saveLog  
+File:D:\WWW\lslyglxt\ThinkPHP\Common\functions.php(681)  __construct  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(89)  controller  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[2016-10-27 22:35:20] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(68)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(29)  getNowPath  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(16)  saveLog  
+File:D:\WWW\lslyglxt\ThinkPHP\Common\functions.php(681)  __construct  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(89)  controller  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyqnode' doesn't exist
+
+[2016-10-27 22:36:09] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:39:24] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:39:49] ::1 /lslyglxt/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:39:49] ::1 /lslyglxt/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:39:51] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyquser' doesn't exist
+
+[2016-10-27 22:40:24] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyquser' doesn't exist
+
+[2016-10-27 22:40:32] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyquser' doesn't exist
+
+[2016-10-27 22:40:50] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyq_user' doesn't exist
+
+[2016-10-27 22:41:39] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyq_user' doesn't exist
+
+[2016-10-27 22:43:42] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.oyyq_user' doesn't exist
+
+[2016-10-27 22:45:30] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(763)  select  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(80)  find  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(54)  authenticate  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'account' in 'where clause'
+
+[2016-10-27 22:48:01] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:48:04] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:49:14] ::1 /lslyglxt/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:49:16] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:49:37] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:49:38] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:50:08] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:50:09] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:50:23] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:50:25] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:50:26] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:51:24] ::1 /lslyglxt/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:51:25] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:51:26] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:51:56] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:51:58] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:52:01] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:52:08] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:53:09] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:53:15] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:54:24] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:55:12] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:56:19] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:56:23] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2016-10-27 22:56:31] ::1 /lslyglxt/index.php/Home/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:56:34] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:56:36] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:57:57] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:58:32] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 22:58:34] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:58:49] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:58:54] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:59:17] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:59:19] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 22:59:21] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:01:11] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:01:17] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:01:20] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:01:24] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:01:30] ::1 /lslyglxt/index.php/Home/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:01:42] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:01:44] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:01:48] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:05:50] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2016-10-27 23:05:53] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:05:57] ::1 /lslyglxt/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[2016-10-27 23:06:00] ::1 /lslyglxt/index.php/Home/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:06:15] ::1 /lslyglxt/index.php/Home/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:06:22] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:06:24] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:06:55] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:07:35] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:08:18] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:08:34] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:08:40] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:08:45] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(28)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[2016-10-27 23:08:48] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:09:22] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:09:39] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:09:42] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:09:45] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:10:55] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:10:57] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:10:59] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(28)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[2016-10-27 23:11:02] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:11:22] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:12:09] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:13:16] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:14:50] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2016-10-27 23:16:16] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:16:36] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:17:12] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:17:13] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:17:16] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:17:18] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:17:23] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:17:26] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:17:28] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(28)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[2016-10-27 23:17:31] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:17:32] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:18:17] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:18:37] ::1 /lslyglxt/index.php/Home/Role/roleAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:18:42] ::1 /lslyglxt/index.php/Home/Role/roleAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:18:56] ::1 /lslyglxt/index.php/Home/Role/roleAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:18:56] ::1 /lslyglxt/index.php/Home/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:19:00] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\RoleController.class.php(295)  select  
+File:()  roleUserList  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+
+[2016-10-27 23:19:03] ::1 /lslyglxt/index.php/Home/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:19:07] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:19:23] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(28)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[2016-10-27 23:19:29] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:19:33] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:19:37] ::1 /lslyglxt/index.php/Home/Role/roleAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:19:52] ::1 /lslyglxt/index.php/Home/Role/roleAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:19:52] ::1 /lslyglxt/index.php/Home/Role/roleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:19:55] ::1 /lslyglxt/index.php/Home/Role/roleEdit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:20:02] ::1 /lslyglxt/index.php/Home/Role/roleEdit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:20:02] ::1 /lslyglxt/index.php/Home/Role/roleEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:20:07] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:20:17] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\RoleController.class.php(295)  select  
+File:()  roleUserList  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+
+[2016-10-27 23:20:56] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:21:00] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:21:04] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:21:07] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:21:13] ::1 /lslyglxt/index.php/Home/Role/roleDel?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:21:13] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:21:17] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:21:42] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:22:45] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:22:57] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:23:00] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:23:21] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:23:33] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[2016-10-27 23:23:41] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(28)  select  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[2016-10-27 23:25:15] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(65)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(37)  fix_user_list  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.t_role_user' doesn't exist
+
+[2016-10-27 23:26:20] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(65)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(37)  fix_user_list  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.t_role_user' doesn't exist
+
+[2016-10-27 23:26:21] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(65)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(37)  fix_user_list  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.t_role_user' doesn't exist
+
+[2016-10-27 23:26:50] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(942)  query  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(583)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(65)  select  
+File:D:\WWW\lslyglxt\Application\Home\Model\UserModel.class.php(37)  fix_user_list  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't_role.id' in 'on clause'
+
+[2016-10-27 23:27:38] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(245)  E  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  __call  
+File:D:\WWW\lslyglxt\Application\Home\Controller\UserController.class.php(21)  get_user_list  
+File:()  index  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: Think\Model:get_user_list鏂规硶涓嶅瓨鍦紒
+
+[2016-10-27 23:28:10] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[2016-10-27 23:28:20] ::1 /lslyglxt/index.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:28:23] ::1 /lslyglxt/index.php/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:28:29] ::1 /lslyglxt/index.php/Home/User/useredit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:28:34] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:28:48] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:28:51] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:28:54] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[2016-10-27 23:28:56] ::1 /lslyglxt/index.php/Home/Role/roleUserList?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:29:00] ::1 /lslyglxt/index.php/Home/Role/useraddrole
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:29:00] ::1 /lslyglxt/index.php/Home/Role/roleUserList/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:29:05] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:29:42] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:29:42] ::1 /lslyglxt/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:29:56] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:30:00] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:30:22] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:30:24] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:30:27] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:31:14] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:31:16] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[2016-10-27 23:31:19] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:31:21] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:31:25] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:31:34] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:31:38] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:31:40] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:31:44] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:32:49] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:32:52] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:33:55] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:33:59] ::1 /lslyglxt/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:34:29] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:34:55] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(902)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(455)  update  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(86)  save  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(63)  dologin  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_time' in 'field list'
+
+[2016-10-27 23:35:18] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(902)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(455)  update  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(86)  save  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(63)  dologin  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'login_count' in 'field list'
+
+[2016-10-27 23:35:36] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(217)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(902)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Model.class.php(455)  update  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(86)  save  
+File:D:\WWW\lslyglxt\Application\Home\Controller\LoginController.class.php(63)  dologin  
+File:()  checkLogin  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(164)  invoke  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list'
+
+[2016-10-27 23:36:01] ::1 /lslyglxt/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[2016-10-27 23:36:03] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Db\Driver.class.php(169)  execute  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Org\Util\Rbac.class.php(247)  query  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(188)  getAccessList  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(120)  menu  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Controller.class.php(41)  _initialize  
+File:D:\WWW\lslyglxt\Application\Home\Controller\BaseController.class.php(14)  __construct  
+File:D:\WWW\lslyglxt\ThinkPHP\Common\functions.php(681)  __construct  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(89)  controller  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\App.class.php(202)  exec  
+File:D:\WWW\lslyglxt\ThinkPHP\Library\Think\Think.class.php(120)  run  
+File:D:\WWW\lslyglxt\ThinkPHP\ThinkPHP.php(97)  start  
+File:D:\WWW\lslyglxt\index.php(31)  require  
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lslyglxt.t_role' doesn't exist
+
+[2016-10-27 23:41:22] ::1 /lslyglxt/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:41:39] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:41:43] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:41:47] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:42:17] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[2016-10-27 23:43:22] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:43:45] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:43:48] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:43:51] ::1 /lslyglxt/index.php/Home/User/index?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:44:11] ::1 /lslyglxt/index.php/Home/Role/roleList?type=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[2016-10-27 23:44:14] ::1 /lslyglxt/index.php/Home/Role/roleAuth?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

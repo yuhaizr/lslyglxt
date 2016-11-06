@@ -1,0 +1,122 @@
+[2015-12-24 21:45:55] 127.0.0.1 /Y2Game/index.php/WorkManage/Work/worklist?type=menu&show=my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.103006s ]
+INFO: [ app_init ] --END-- [ RunTime:1.186068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.211012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.211012s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0040s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.0020s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=2 and node.status=1 [ RunTime:0.0020s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=4 and node.status=1 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'WorkManage'  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'Work'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'worklist'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `t_log` (`user_id`,`nickname`,`module`,`action`,`function`,`ctime`,`parameter`) VALUES ('1','超级管理员','WorkManage','Work','worklist','2015-12-24 21:45:48','{\"get\":{\"type\":\"menu\",\"show\":\"my\"},\"post\":[]}') [ RunTime:4.3562s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_work` WHERE `userId` = '1' AND `isDelete` = '0' LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `t_work` WHERE `userId` = '1' AND `isDelete` = '0' LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+
+[2015-12-24 21:46:01] 127.0.0.1 /Y2Game/index.php/WorkManage/Work/worklist?type=menu&show=my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.103006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.911053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.213012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.213012s ]
+
+[2015-12-24 21:46:21] 127.0.0.1 /Y2Game/index.php/WorkManage/Work/worklist?type=menu&show=member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0000s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.0000s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=2 and node.status=1 [ RunTime:0.0010s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=4 and node.status=1 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'WorkManage'  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'Work'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'worklist'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `t_log` (`user_id`,`nickname`,`module`,`action`,`function`,`ctime`,`parameter`) VALUES ('1','超级管理员','WorkManage','Work','worklist','2015-12-24 21:46:02','{\"get\":{\"type\":\"menu\",\"show\":\"member\"},\"post\":[]}') [ RunTime:3.3182s ]
+SQL: SELECT * FROM `t_user` WHERE `id` = '1'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_user` WHERE `level` = 1 AND `s_id` = '1'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_work` WHERE `userId` IN ('2') AND `isDelete` = '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `t_work` WHERE `userId` IN ('2') AND `isDelete` = '0' LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page_description F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 8 行.
+NOTIC: [8] Undefined variable: task_num F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 177 行.
+NOTIC: [8] Undefined variable: task_num F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 183 行.
+NOTIC: [8] Undefined variable: taskList F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 190 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 322 行.
+NOTIC: [8] Undefined offset: 1 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 455 行.
+NOTIC: [8] Undefined offset: 2 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 455 行.
+NOTIC: [8] Undefined offset: 3 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\ba09a8d4f0e3fc376061c0b32f7e3f14.php 第 455 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:16.179926s ]
+INFO: [ view_parse ] --END-- [ RunTime:16.179926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.143008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.143008s ]
+
+[2015-12-24 21:46:28] 127.0.0.1 /Y2Game/index.php/WorkManage/Work/worklist?type=menu&show=my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\FlashBehaviors [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0010s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.0010s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=2 and node.status=1 [ RunTime:0.0010s ]
+SQL: select node.id,node.name from t_role as role,t_role_user as userrole,t_access as access ,t_node as node where userrole.user_id='1' and userrole.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=4 and node.status=1 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'WorkManage'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'Work'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_node` WHERE (  name like 'worklist'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `t_log` (`user_id`,`nickname`,`module`,`action`,`function`,`ctime`,`parameter`) VALUES ('1','超级管理员','WorkManage','Work','worklist','2015-12-24 21:46:22','{\"get\":{\"type\":\"menu\",\"show\":\"my\"},\"post\":[]}') [ RunTime:0.8540s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `t_work` WHERE `userId` = '1' AND `isDelete` = '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `t_work` WHERE `userId` = '1' AND `isDelete` = '0' LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page_description F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 8 行.
+NOTIC: [8] Undefined variable: task_num F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 177 行.
+NOTIC: [8] Undefined variable: task_num F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 183 行.
+NOTIC: [8] Undefined variable: taskList F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 190 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined variable: SECOND_NOW_MENU F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 322 行.
+NOTIC: [8] Undefined offset: 1 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 455 行.
+NOTIC: [8] Undefined offset: 2 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 455 行.
+NOTIC: [8] Undefined offset: 3 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 455 行.
+NOTIC: [8] Undefined offset: 1 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 557 行.
+NOTIC: [8] Undefined offset: 2 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 557 行.
+NOTIC: [8] Undefined offset: 3 F:\zendserver\Apache2\htdocs\Y2Game\Application\Runtime\Cache\WorkManage\3e780e49fec292184d0404b3bbdb99b9.php 第 557 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:4.807275s ]
+INFO: [ view_parse ] --END-- [ RunTime:4.807275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

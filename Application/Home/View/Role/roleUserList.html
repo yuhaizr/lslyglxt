@@ -1,0 +1,61 @@
+<extend name="Public:base" />
+<block name="body">
+
+<div class="row">
+         
+       <div class="tab-content tabs-flat">
+           <div id="home11" class="tab-pane in active">
+            <h6>当前用户组</h6>
+            <form action="__URL__/useraddrole" method="post" id="roleuserForm">
+               <select style="width:100%;" name="role" id="role" onchange="dochangerole()">
+                       <foreach name="Roleinfodata" item="value">
+                       		<option value="{$value.id}" <if condition="$value.roleselect eq 1">selected</if> />{$value.name}
+                       </foreach>
+                 </select>
+          </div>
+       </div>
+       <div class="col-lg-15 col-sm-15 col-xs-15">
+               <div class="widget flat radius-bordered">
+                   <div class="widget-body bordered-bottom bordered-darkorange">
+                       <h5>Checkboxes</h5>
+                        	<div class="row">
+                        	<foreach name="nodelist" item="value">
+                             <div class="col-lg-4 col-sm-4 col-xs-4">
+                                 <div class="checkbox">
+                                     <label>
+                                         <input type="checkbox" name="user[]" value="{$value.id}" <if condition="$value.selected eq 1">checked="checked"</if>>
+                                         <span class="text">{$value.account} {$value.nickname}</span>
+                                     </label>
+                                 </div>
+       						         </div>
+       						       </foreach> 
+                        	</div>
+                        		<button type="submit" class="btn btn-blue" onclick="useraddrole()">Submit</button>
+                       	</form>
+                    </div>
+                </div>
+       </div> 
+</div>              
+</block>
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //$("#registrationForm").bootstrapValidator();
+});
+function useraddrole(){
+	$("#roleuserForm").submit();
+}
+function dochangerole(){
+	var val  = $("#role").find("option:selected").val();
+	window.location.href=__URL+"/roleUserList?id="+val;
+}
+</script>
+</block>

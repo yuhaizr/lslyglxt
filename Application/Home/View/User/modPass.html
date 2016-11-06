@@ -1,0 +1,112 @@
+<extend name="Public:base" />
+<block name="body">
+
+	<div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="widget">
+                <div class="widget-header ">
+                    <span class="widget-caption">用户列表</span>
+                    <div class="widget-buttons">
+                        <a href="#" data-toggle="maximize">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#" data-toggle="collapse">
+                            <i class="fa fa-minus"></i>
+                        </a>
+                        <a href="#" data-toggle="dispose">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="widget-body">
+                    <div class="table-toolbar">
+                    	
+                    	<div class='row'>
+                    		   <div class='col-sm-2 div_middle'>
+                    		   		原密码
+                    		   </div>
+	   			               <div class='col-sm-4'>
+			                		<input type="text" value="{$oldpass}" id='oldpass' class="form-control"  placeholder="请输入原密码">
+			                   </div>                	
+                    	</div>
+                    	<div class='row'>
+                    		   <div class='col-sm-2 div_middle'>
+                    		   		新密码
+                    		   </div>
+	   			               <div class='col-sm-4'>
+			                		<input type="text" value="{$newpass}" id='newpass' class="form-control"  placeholder="请输入新密码">
+			                   </div>                	
+                    	</div>
+                    	<div class ='row' style="margin-top: 40px;">
+                    		<div class='col-sm-offset-3'>
+                    			<a class='btn btn-info' id='mod_btn'> 修改</a>
+                    		</div>
+                    	
+                    	</div>
+               
+  
+                    </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<style type="text/css">
+		.row{
+			margin-bottom: 20px;
+		}
+		.div_middle{
+			line-height: 34px;
+			height: 34px;
+			text-align: right;
+		}
+		
+	</style>
+	
+
+
+ </block>
+ 
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>   
+<script type="text/javascript">
+
+	$('#mod_btn').click(function(){
+		var oldpass = $('#oldpass').val();
+		var newpass = $('#newpass').val();
+
+		if(!oldpass || !newpass){
+			alert('参数缺失');
+			return ;
+		}
+		
+		var data = {'oldpass':oldpass,'newpass':newpass,'type':'modpass'};
+		
+		$.ajax({
+			url:"__APP__/Home/User/modpass",
+			type:"GET",
+			data:data,
+			dataType:'json',
+			success:function(data){
+				alert(data.message)
+				
+				if('0' == data.status){
+					location.href = '__APP__/Home/Login/index'
+				}
+			}
+		});
+	});
+
+
+
+</script>
+</block>

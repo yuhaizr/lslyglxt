@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<!--Head xmlns="http://www.w3.org/1999/xhtml"-->
+<head>
+    <meta charset="utf-8" />
+    <title>{$page_title}</title>
+
+    <meta name="description" content="{$page_description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="__PUBLIC__/img/favicon.png" type="image/x-icon"> 
+
+    <!--Basic Styles-->
+    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet" /> 
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__PUBLIC__/css/beyond.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/demo.min.css" rel="stylesheet" /> 
+    <link href="__PUBLIC__/css/animate.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/load.css" rel="stylesheet" />
+    
+
+	<script type="text/javascript">
+	var __URL = '__URL__';
+	var __APP = '__APP__';
+	var __PUBLIC = '__PUBLIC__';
+	var __AJAX;
+	</script>
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="__PUBLIC__/js/skins.min.js"></script>
+    <script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+    <script src="__PUBLIC__/base.js"></script>
+    <block name="headjs"></block>
+    <script type="text/javascript">
+    
+	/* 在ajax 请求返回结果之前做些处理判断用户是否有权访问  */
+	$(function(){
+		__AJAX = $.ajax;
+		var ajax = $.ajax;
+	    $.ajax = function (opt) {
+	        //备份opt中error和success方法
+	        var fn = {
+	            success: function (data, textStatus, jqXHR) {
+	            }
+	        }
+	        if (opt.success) {
+	            fn.success = opt.success;
+	        }
+	        //扩展增强处理
+	        var _opt = $.extend(opt, {
+	            success: function (data, textStatus, jqXHR) {
+	                //alert('重写success事件');
+	                $('.sk-circle').hide();
+	                $('.mask').hide();
+	                if (data.info) {
+	                    alert(data.info);
+	                    return;
+	                }
+	                fn.success(data, textStatus, jqXHR);
+	            },
+	        	beforeSend:function(){
+	        		$('.sk-circle').show();
+	        		$('.mask').show();
+	        	}
+	        });
+	        var def = ajax.call($, _opt);                                                                                                                             // 兼容不支持异步回调的版本
+	        if('done' in def){
+	            var done = def.done;
+	            def.done = function (func) {
+	                function _done(data) {
+		                $('.sk-circle').hide();
+		                $('.mask').hide();
+	                    if (data.info) {
+	                        alert(data.info);
+	                        return;
+	                    }
+	                    func(data);
+	                }
+	                done.call(def, _done);
+	                return def;
+	            };
+	        }
+	        return def;
+	    };
+	}); 
+    </script>    
+    
+    
+</head>
+<!--Head Ends-->
+<!--Body-->
+<body>
+<!-- ajax loading -->
+	<div class='mask opacity'></div>
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+<!-- ajax loading -->
+
+<!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loading-progress">
+            <div class="rotator">
+                <div class="rotator">
+                    <div class="rotator colored">
+                        <div class="rotator">
+                            <div class="rotator colored">
+                                <div class="rotator colored"></div>
+                                <div class="rotator"></div>
+                            </div>
+                            <div class="rotator colored"></div>
+                        </div>
+                        <div class="rotator"></div>
+                    </div>
+                    <div class="rotator"></div>
+                </div>
+                <div class="rotator"></div>
+            </div>
+            <div class="rotator"></div>
+        </div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand" id="nav-title">
+                        <small>
+                            <!-- <img src="__PUBLIC__/img/logo.png" alt="" /> -->
+                            <font size ='2'>
+                           		 庐山旅游管理系统设计与实现
+                            </font>
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+							<li id="tasks" class="bg-themesecondary" style="<if condition='$task_num eq 0'>display:none;</if> ">
+                                <a class="wave in dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span class="badge tasks-num">{$task_num}</span>
+                                </a>
+                                <!--Messages Dropdown-->
+                                 <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+	                                	<foreach name='taskList' key='key' item='vo'>
+		                                    <li data-url="{$vo.url}" data-id="{$vo.id}" class='read_message' style="cursor:pointer">
+		                                        <a >
+		                                          
+		                                            <div class="message">
+		                                                <span class="message-sender">
+		                                                   {$vo.from_nickname}
+		                                                </span>
+		                                                <span class="message-time">
+		                                                   {$vo.ctime}
+		                                                </span>
+		                          	                	<span class="message-subject">
+		                                                   <!-- {$vo.message}  -->
+		                                                </span>
+		                                                <span class="message-body">
+		                                                   {$vo.message} 
+		                                                </span>
+		                                            </div>
+		                                        </a>
+		                                    </li>
+	
+	                                    </foreach>
+                                   		<li style="font-size: 0.2em;text-align: right;">
+                                   			<span class="col-sm-6"><button class="btn btn-sm readedAll">全部标记为已读</button></span>
+                                			<span class="col-sm-6"><button class="btn btn-sm"><a href="__APP__/Home/Task/taskList" target="_blank">显示所有消息</a></button></span>
+                                		</li>
+	                                </ul>      
+             				</li>      
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                        <img src="">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>{$_SESSION['loginUserName']}</span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                        
+                                    <!--Theme Selector Area-->
+<!--                                     <li class="theme-area">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="__PUBLIC__/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="__PUBLIC__/css/skins/azure.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="__PUBLIC__/css/skins/teal.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="__PUBLIC__/css/skins/green.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="__PUBLIC__/css/skins/orange.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="__PUBLIC__/css/skins/pink.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="__PUBLIC__/css/skins/darkred.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="__PUBLIC__/css/skins/purple.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="__PUBLIC__/css/skins/darkblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="__PUBLIC__/css/skins/gray.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="__PUBLIC__/css/skins/black.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="__PUBLIC__/css/skins/deepblue.min.css"></a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer">
+                                        <a href="__APP__/Home/login/logout">
+                                            		注销
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+       <!--          <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div> -->
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                 <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li class="active">
+                        <a href="__ROOT__/index.php/Home/Index/index">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Home </span>
+                        </a>
+                    </li>
+                    <!--Tables-->
+                    <foreach name="menu" item="value" key="key">
+                    	<li  <if condition="$value.link eq $NOW_MENU">class='open'</if>  >
+                   			 <a href= "#" class="menu-dropdown">
+	                            <i class="menu-icon fa fa-table"></i>
+	                            <span class="menu-text"> {$value.title} </span>
+	                            <i class="menu-expand"></i>
+                        	</a>
+                        	<ul class="submenu">
+                        		<foreach name="value.childs" item="v">
+                        			<li   <if condition="$v.link eq $SECOND_NOW_MENU">class='open'</if> >
+                        				<empty name="v.childs">
+			                                <a href="__APP__{$v.link}" target="_blank">
+			                                    <span class="menu-text">{$v.title}</span>
+			                               
+			                                </a> 
+		                               	<else/>
+		                               		<a href="#" class="menu-dropdown">
+			                                    <span class="menu-text">{$v.title}</span>
+			                                    <i class="menu-expand"></i>
+				                            </a> 
+				                            <ul class="submenu">
+				                                <foreach name="v.childs" item="cv">
+					                                	<li>
+						                                	  <a href="__APP__{$cv.link}" target="_blank">
+							                                      <span class="menu-text">{$cv.title}</span>
+							                      
+						                              		  </a>
+					                                	</li>
+				                                </foreach> 
+				                            </ul> 
+		                                </empty>
+		                            </li>
+                        		</foreach>
+                        	</ul>
+                    	</li>
+                    </foreach>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                           <!--  <a href="#">Home</a> -->
+                            {$NOW_PATH}
+                        </li>
+                      <!--   <li class="active">Dashboard</li> -->
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                 <!--        <h1>
+                            Dashboard
+                        </h1> -->
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                        <a class="sidebar-toggler" href="#">
+                            <i class="fa fa-arrows-h"></i>
+                        </a>
+                        <a class="refresh" id="refresh-toggler" href="">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </a>
+                        <a class="fullscreen" id="fullscreen-toggler" href="#">
+                            <i class="glyphicon glyphicon-fullscreen"></i>
+                        </a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+        		<!-- Page Body -->
+        		<div class="page-body">
+        		<if condition="!empty($_SESSION['__SYS_MESSAGE__'])">
+        		<div class="row">
+        			<div class="col-xs-12 col-md-12">
+	        		<if condition="$_SESSION['__SYS_MESSAGE_TYPE__'] eq 'error'">
+	        		<div class="alert alert-danger fade in">
+	        		<else/>
+	        		<div class="alert alert-{$_SESSION['__SYS_MESSAGE_TYPE__']|strtolower} fade in">
+	        		</if>
+                     <button class="close" data-dismiss="alert">
+                         ×
+                     </button>
+                     <if condition="$_SESSION['__SYS_MESSAGE_TYPE__'] eq 'success'">
+                     <i class="fa-fw fa fa-check"></i>
+                     <elseif condition="$_SESSION['__SYS_MESSAGE_TYPE__'] eq 'error'"/>
+                     <i class="fa-fw fa fa-times"></i>
+                     <else/>
+                     <i class="fa-fw fa fa-{$_SESSION['__SYS_MESSAGE_TYPE__']|strtolower}"></i>
+                     </if>
+                     <strong>{$_SESSION['__SYS_MESSAGE_TYPE__']|ucfirst}</strong> {$_SESSION['__SYS_MESSAGE__']}
+                 </div></div>
+                 </div>
+                 </if>
+        		<block name="body">body</block>
+        		</div>
+				<!-- /Page Body -->
+			</div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+
+    </div>
+ 
+    <style type="text/css">
+
+   		th,td{
+   			text-align: center;
+   		}
+   </style>
+       <script>
+    	$(function(){
+    		var my_del_btn = {$my_del_btn};	
+    		var my_modify_btn = {$my_modify_btn};	
+    		
+    		if(my_del_btn == '1'){
+    			$(".my_del_btn").show();
+    		}
+    		if(my_modify_btn == '1'){
+    			$(".my_modify_btn").show();
+    			$(".my_detail_btn").hide();
+    		}
+    		
+    	});
+    </script>
+    
+    <link href="__PUBLIC__/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
+    <block name="footjs">
+	<!--Basic Scripts-->
+    <script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="__PUBLIC__/js/beyond.min.js"></script>
+    
+
+    
+    </block>
+
+</body>
+<!--Body Ends-->
+</html>

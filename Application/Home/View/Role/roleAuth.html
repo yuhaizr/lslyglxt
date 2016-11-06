@@ -1,0 +1,207 @@
+<extend name="Public:base" />
+<block name="body">
+
+<div class="row">
+	<div class="col-lg-12 col-sm-6 col-xs-12">
+		<div class="widget flat radius-bordered">
+			<div class="widget-header bg-themeprimary">
+                    <span class="widget-caption">授权管理</span>
+            </div>
+            <div class="widget-body">
+				<div class="widget-main ">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs tabs-flat" id="myTab11">
+                                <li id="tab1">
+                                    <a data-toggle="tab" href="#home11">
+                                        	模块授权
+                                    </a>
+                                </li>
+                                <li id="tab3">
+                                    <a data-toggle="tab" href="#action11">
+                                        	控制器授权
+                                    </a>
+                                </li>
+                                <li id="tab2">
+                                    <a data-toggle="tab" href="#profile11">
+                                        	操作授权
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tabs-flat">
+                                <div id="home11" class="tab-pane in active">
+                                	<h6>当前用户组</h6>
+                                	<form action="__URL__/setRoleMedule" method="post" id="rolemedule">
+	                                	<select id="role" style="width:100%;" onchange="dochangerole()" name="rolegroup">
+		                                 	<foreach name="rolelist" item="value">
+		                                 		<option value="{$value.id}" <if condition="$value.roleselect eq 1">selected</if> />{$value.name}
+		                                 	</foreach>
+	                            		</select>
+	                           			<div class="col-lg-15 col-sm-15 col-xs-15">
+				                       		<div class="widget flat radius-bordered">
+				                              <h5>Checkboxes</h5>
+				                              <foreach name="moduleList" item="value" key="key">
+				                                  <div class="col-lg-4 col-sm-4 col-xs-4">
+				                                      <div class="checkbox">
+				                                          <label>
+				                                              <input type="checkbox" name="groupId[]" value="{$key}" <if condition="$value.selected eq 1">checked="checked"</if>>
+				                                              <span class="text">{$value.title}</span>
+				                                          </label>
+				                                      </div>
+											      </div>
+	                               			  </foreach>
+	                               			</div>
+	                               		</div>
+                                 	</form>
+                            		<button type="submit" class="btn btn-blue" onclick="setrolemodule()">Submit</button>
+                        		</div>
+                                <div id="action11" class="tab-pane">
+              							 <h6>当前用户组</h6>
+	                                   <form action="__URL__/setActionList" method="post" id="rolemedule">
+		                                   <select id="roleb" style="width:100%;" onchange="dochangeroleb()" name="groupId">
+				                           <foreach name="rolelist" item="value">
+				                            		<option value="{$value.id}" <if condition="$value.roleselect eq 1">selected</if> />{$value.name}
+				                           </foreach>
+		                             	   </select>
+				                              <h6>当前模块</h6>
+				                              <select id="actionb" style="width:100%;"  name="actionId" onchange="getActionb()" >
+				                              		<option value="0">请选择</option>
+				                                   <foreach name="moduleList" item="value" key="key">
+				                                      <if condition="$value.selected eq 1">
+				                                 		   <option value="{$key}" <if condition="$key eq $actionid">selected</if>>{$value.title}</option>
+				                                       </if>
+				                                 	</foreach>
+				                              </select>
+				          
+				                              <div class="col-lg-15 col-sm-15 col-xs-15">
+				                       		  	  <div class="widget flat radius-bordered">
+				                              	  <h5>Checkboxes</h5>
+					                              <foreach name="actionlist" item="value" key="key">
+						                                <div class="col-lg-4 col-sm-4 col-xs-4">
+							                                 <div class="checkbox">
+							                                     <label>
+							                                         <input type="checkbox" name="actionList[]" value="{$key}" <if condition="$value.selected eq 1">checked</if>>
+							                                         <span class="text">{$value.title}</span>
+							                                     </label>
+							                                 </div>
+						       						     </div>
+					     						  </foreach>
+					     					  	  </div>
+					     					  </div>
+					     					  <input type='hidden' name="action" value="{$action}"/>
+				     						  <button type="submit" class="btn btn-blue" onclick="setrolemodule()">Submit</button>
+	     						      	</form>
+                        		</div>
+                                <div id="profile11" class="tab-pane">
+	                                   <h6>当前用户组</h6>
+	                                   <form action="__URL__/setRoleAction" method="post" id="rolemedule">
+		                                   <select id="rolea" style="width:100%;" onchange="dochangerolea()" name="groupId">
+				                           <foreach name="rolelist" item="value">
+				                            		<option value="{$value.id}" <if condition="$value.roleselect eq 1">selected</if> />{$value.name}
+				                           </foreach>
+		                             	   </select>
+				                              <h6>当前模块</h6>
+				                              <select id="action" style="width:100%;"  name="actionId" onchange="getAction()" >
+				                              		<option value="0">请选择</option>
+				                                   <foreach name="moduleList" item="value" key="key">
+				                                      <if condition="$value.selected eq 1">
+				                                 		   <option value="{$key}" <if condition="$key eq $actionid">selected</if>>{$value.title}</option>
+				                                       </if>
+				                                 	</foreach>
+				                              </select>
+				                              <h6>当前控制器</h6>
+				                              <select id="function" style="width:100%;"  name="funId" onchange="getFunc()" >
+				                              		<option value="0">请选择</option>
+				                                   <foreach name="myActionlist" item="value" key="key">
+				                                 		   <option value="{$key}" <if condition="$key eq $funid">selected</if>>{$value.title}</option>
+				                                 	</foreach>
+				                              </select>
+				                              <div class="col-lg-15 col-sm-15 col-xs-15">
+				                       		  	  <div class="widget flat radius-bordered">
+				                              	  <h5>控制器列表</h5>
+					                              <foreach name="funList" item="value" key="key">
+						                                <div class="col-lg-4 col-sm-4 col-xs-4">
+							                                 <div class="checkbox">
+							                                     <label>
+							                                         <input type="checkbox" name="funcaction[]" value="{$key}" <if condition="$value.selected eq 1">checked</if>>
+							                                         <span class="text">{$value.title}</span>
+							                                     </label>
+							                                 </div>
+						       						     </div>
+					     						  </foreach>
+					     					  	  </div>
+					     					  </div>
+					     					  <input type='hidden' name="action" value="{$action}"/>
+				     						  <button type="submit" class="btn btn-blue" onclick="setrolemodule()">Submit</button>
+	     						      	</form>
+     						 	</div>
+						</div>
+                   	</div>
+                 </div>         
+			</div>
+		</div>
+	</div>
+</div>                     
+</block>
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //$("#registrationForm").bootstrapValidator();
+    var action = "{$action}";
+    if(action == '1'){
+    	$("#home11").attr('class','tab-pane in active');
+    	$("#profile11").attr('class','tab-pane');
+    	$("#action11").attr('class','tab-pane');
+    	$("#tab1").attr('class','active');
+    }else if(action == '2') {
+    	$("#home11").attr('class','tab-pane');
+    	$("#action11").attr('class','tab-pane');
+    	$("#profile11").attr('class','tab-pane in active');
+    	$("#tab2").attr('class','active');
+    }else{
+    	$("#home11").attr('class','tab-pane');
+    	$("#profile11").attr('class','tab-pane');
+    	$("#action11").attr('class','tab-pane in active');
+    	$("#tab3").attr('class','active');    	
+    }
+});
+function dochangerole(){
+	var val  = $("#role").find("option:selected").val();
+	window.location.href=__URL+"/roleAuth?action=1&id="+val;
+}
+function dochangerolea(){
+  var val  = $("#rolea").find("option:selected").val();
+  window.location.href=__URL+"/roleAuth?action=2&id="+val;
+}
+function dochangeroleb(){
+  var val  = $("#roleb").find("option:selected").val();
+  window.location.href=__URL+"/roleAuth?action=3&id="+val;
+}
+function setrolemodule(){
+ $("#rolemedule").submit();
+}
+function getAction(){
+  var val  = $("#rolea").find("option:selected").val();
+  var val2 = $("#action").find("option:selected").val();
+  window.location.href=__URL+"/roleAuth?action=2&id="+val+"&actionId="+val2;
+}
+function getActionb(){
+  var val  = $("#roleb").find("option:selected").val();
+  var val2 = $("#actionb").find("option:selected").val();
+  window.location.href=__URL+"/roleAuth?action=3&id="+val+"&actionId="+val2;
+}
+function getFunc(){
+	var val  = $("#rolea").find("option:selected").val();
+	  var val2 = $("#action").find("option:selected").val();
+	  var val3 = $("#function").find("option:selected").val();
+	  window.location.href=__URL+"/roleAuth?action=2&id="+val+"&actionId="+val2+"&funId="+val3;
+}
+</script>
+</block>

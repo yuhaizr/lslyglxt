@@ -1,0 +1,67 @@
+<extend name="Public:base" />
+<block name="body">
+
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">编辑角色</span>
+                         </div>
+                         <div class="widget-body">
+                             <form id="registrationForm" action="__SELF__" method="post" class="form-horizontal bv-form" >
+                      
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">角色名称</label>
+                                     <div class="col-lg-8">
+                                         <input type="text" class="form-control" name="name" value = "{$roleinfo.name}" required="required">
+                                         
+                                     </div>
+                                 </div>
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">是否启用</label>
+                                     <div class="col-lg-8">
+                                         <input class="checkbox-slider slider-icon yesno" value="1" name="status" checked="checked" type="checkbox"><span class="text"></span></div>
+                                 </div>
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">备注说明</label>
+                                     <div class="col-lg-8">
+                                         <input type="text" class="form-control" name="remark" data-bv-notempty="true" data-bv-notempty-message="The password is required and cannot be empty"  data-bv-field="password" value="{$roleinfo.remark}">
+                                     </div>
+                                 </div>
+                                 <input type="hidden" name="id" value="{$id}">
+                                 <div class="form-group">
+                                     <div class="col-lg-offset-4 col-lg-8">
+                                         <input class="btn btn-palegreen" type="submit" value="添 加">
+                                     </div>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
+
+ </block>
+ 
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#role_id").select2();
+    //$("#registrationForm").bootstrapValidator();
+});
+</script>
+</block>

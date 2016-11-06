@@ -1,0 +1,188 @@
+<extend name="Public:base" />
+<block name="body">
+
+<div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="widget">
+                <div class="widget-header ">
+                    <span class="widget-caption">用户列表</span>
+                    <div class="widget-buttons">
+                        <a href="#" data-toggle="maximize">
+                            <i class="fa fa-expand"></i>
+                        </a>
+                        <a href="#" data-toggle="collapse">
+                            <i class="fa fa-minus"></i>
+                        </a>
+                        <a href="#" data-toggle="dispose">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="widget-body">
+                    <div class="table-toolbar">
+                    	<form action="__URL__/userList">
+                    	 <div class="search-box col-sm-3" >
+			                		<div>
+			                			<span class="input-icon">
+			                				<input type="text" value="{$nickname}" name='nickname' id='nickname' class="form-control"  placeholder="请输入用户姓名">
+			                				<i class="glyphicon glyphicon-search circular blue"></i>
+			                			</span>
+			                		</div>
+			               </div>	     
+                    	   <div class="col-sm-3">
+										<div class="form-group">
+								
+											<div class="col-lg-8">
+                                            <select  id="role_id" name="role_id" style="width:100%">
+                                           	    <option value=''/>请选择角色
+												<foreach name="roleList" item="vo">
+												<option value="{$vo.id}" {$role_select[$vo['id']]}/>{$vo.name}
+												</foreach>
+											</select>
+											<span class="text"></span></div>
+										</div>
+						  </div>
+						  <div class="col-sm-3">
+						  	<button id="searchUser" type="submit"  class="btn btn-default" >搜索</button>
+						  </div>
+                        </form>
+                          <div class="col-sm-3">
+                            <a id="editabledatatable_new" href="javascript:void(0);" class="btn btn-default" onclick="jumpuseradd()">添加用户</a>
+                          </div>
+                        
+                        
+            
+                    </div>
+                    <div class="table-toolbar" style="margin-top: 10px;">
+                    </div>
+                    <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+                        <thead>
+                            <tr role="row">
+						        <th>编号</th>
+						        <th>账号</th>
+						        <th class="numeric">昵称</th>
+						        <th class="numeric">角色</th>
+						        <th class="numeric">上次登录</th>
+						        <th class="numeric">登录次数</th>
+						        <th class="numeric">状态</th>
+						        <th class="numeric">操作 </th>
+        					</tr>
+      </thead>
+       <tbody id='userlistTable'>
+       <foreach name="userinfolist" item="value" key='key'>
+      	<tr>
+      		
+      		<td>{$key + 1}</td>
+      		<td>{$value.account}</td>
+      		<td>{$value.nickname}</td>
+      		<td>{$value.role_name}</td>
+      		<td>{$value.last_login_time}</td>
+      		<td>{$value.login_count}</td>
+      		<td>{$value.status}</td>
+      		
+      		 <td>
+             <a href="#" onclick="jumpuseredit({$value.id})" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
+             <a href="#" onclick="jumpuserdelete({$value.id})" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+            </td>
+      	</tr>
+      </foreach>
+      </tbody>
+      </table>
+      
+  
+               <div class="row DTTTFooter">
+					<div class="col-sm-6">
+						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
+					</div>
+					<div class="col-sm-8 pull-right">
+						<div class="dataTables_paginate paging_bootstrap" id="simpledatatable_paginate">
+							<ul class="pagination" id="pageUl">
+								{$page}
+							</ul>
+						</div>
+					</div>				
+            	</div>        
+      
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+function jumpuseradd(){
+	window.location.href=__URL+"/useradd";
+}
+function jumpuseredit(id){
+	window.location.href=__URL+"/useredit?id="+id;
+}
+function jumpuserdelete(id){
+	if(confirm('确定删除吗？')){
+		window.location.href=__URL+"/userdelete?id="+id;
+	}
+}
+
+$(function(){/* 
+	$('#searchUser').click(function(){
+		var nickname = $("#nickname").val();
+		var role_id = $("#role_id").val();
+		data = {"role_id":role_id,"nickname":nickname,"type":"searchUserList"};
+		$.ajax({
+			type: "POST",
+			url: '__APP__/Home/User/index',
+			data: data,
+			dataType: 'json',
+			success: function(dt) {	
+			
+				var show = dt.show;
+				$("#pageUl").html(show);
+				dt = dt.data;
+				var html = "";
+				$.each(dt,function(k,v){
+					html += "<tr>";
+		      		var num = k + 1; 
+					html += "<td>"+num+"</td>";
+					html += "<td>"+v.account+"</td>";
+					html += "<td>"+v.nickname+"</td>";
+					html += "<td>"+v.role_name+"</td>";
+					html += "<td>"+v.last_login_time+"</td>";
+					html += "<td>"+v.login_count+"</td>";
+					html += "<td>"+v.status+"</td>";
+		      		
+					html += " <td>";
+					html += ' <a href="#" onclick="jumpuseredit({$value.id})" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a> ';
+					html += ' <a href="#" onclick="jumpuserdelete({$value.id})" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>';
+					html += " </td>";
+					html += "</tr>	";			
+					
+				});
+				
+				$("#userlistTable").html(html);
+				
+				
+				
+			}
+		
+		});	
+	}); */
+	
+});
+
+</script>
+ </block>
+ 
+<block name="footjs">
+<!--Basic Scripts-->
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="__PUBLIC__/js/beyond.min.js"></script>
+ <!--Page Related Scripts-->
+<script src="__PUBLIC__/js/validation/bootstrapValidator.js"></script>
+<script src="__PUBLIC__/js/select2/select2.js"></script>   
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#role_id').select2();
+    $("#registrationForm").bootstrapValidator();
+});
+</script>
+</block>
