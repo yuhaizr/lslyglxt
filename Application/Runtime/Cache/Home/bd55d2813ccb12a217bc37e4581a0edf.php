@@ -8,16 +8,16 @@
     <meta name="description" content="<?php echo ($page_description); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> 
 
     <!--Basic Styles-->
     <link href="/lslyglxt/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> 
 
     <!--Beyond styles-->
     <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> 
     <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
     <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" />
     

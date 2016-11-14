@@ -13,21 +13,7 @@ class LoginController extends Controller
         if (isset($_SERVER['SSL_CLIENT_CERT'])) {
             $cert = $_SERVER['SSL_CLIENT_CERT'];
             $cert = get_cert_md5($cert);
-            
-            // 生成认证条件
-            $map = array();
-            // 支持使用绑定帐号登录
-            $map['cert'] = $cert;
-            $map["status"] = array(
-                    'gt',
-                    0
-            );
-            $authInfo = Rbac::authenticate($map);
-            if (empty($authInfo)) {
-                header('Content-Type:text/html;charset=UTF-8');
-                exit('您的指纹是：' . $cert);
-            }
-            $this->dologin($authInfo);
+ 
         } else {
             C('SHOW_RUN_TIME', false); // 运行时间显示
             C('SHOW_PAGE_TRACE', false);

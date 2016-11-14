@@ -92,7 +92,7 @@ class HotelController extends BaseController
     public function del(){
         $id = I('id');
 
-        $scenicSpot = M('ScenicSpot');
+        $scenicSpot = M('Hotel');
 
         if (isset($id) && $id){
             $data['is_valid'] = '0';

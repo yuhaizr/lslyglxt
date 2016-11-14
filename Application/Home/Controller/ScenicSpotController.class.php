@@ -2,6 +2,7 @@
 namespace Home\Controller;
 
 use Home\Model\ScenicSpotModel;
+use Think\Upload;
 /**
  * 景点管理
  * @author Administrator
@@ -50,6 +51,20 @@ class ScenicSpotController extends BaseController
             $this->display();exit();
         }
         $data = $_POST;
+        
+
+        if ($_FILES['imglink']['name'] ){
+            $imageinfo = $this->saveImage();
+            if(isset($imageinfo['imglink']) && $imageinfo['imglink']){
+                $data['imglink'] = $imageinfo['imglink'];
+            }else{
+                unset($data['imglink']);
+            }
+        
+        }else{
+            unset($data['imglink']);
+        }
+        
         $scenicSpot = M('ScenicSpot');
         $this->check($data);
         
@@ -74,6 +89,19 @@ class ScenicSpotController extends BaseController
         if (isset($id) && $id){
         
             $where['id'] = $id;
+          
+            if ($_FILES['imglink']['name'] ){
+                $imageinfo = $this->saveImage();
+                if(isset($imageinfo['imglink']) && $imageinfo['imglink']){
+                    $data['imglink'] = $imageinfo['imglink'];
+                }else{
+                    unset($data['imglink']);
+                }
+            
+            }else{
+                unset($data['imglink']);
+            }
+            
             $res = $scenicSpot->where($where)->save($data);
              
             if ($res === false){
@@ -187,5 +215,39 @@ class ScenicSpotController extends BaseController
         $this->display();
     }
     
+    private function saveImage(){
     
+        $rootPath = __REAL_APP_ROOT__."/Public/upload/";
+        if (!is_dir(__REAL_APP_ROOT__."/Public/upload/")){
+            mkdir(__REAL_APP_ROOT__."/Public/upload/",0777);
+    
+        }
+    
+        $config = array(
+            'rootPath' => $rootPath
+            ,'subName' => ''
+            ,'replace' => true
+            ,'callback' => true
+            ,'exts' => array('png','gif','jpg','jpeg')
+        );
+    
+        $upload = new Upload($config);
+        $upload->autoSub = true;
+        $upload->subName = array('date',"Ymd");
+        $upload->saveName = time()."_".mt_rand();
+        $info = $upload->upload();
+
+        if (!$info){
+            $this->crmError($upload->getError());
+        }else {
+            $filenameArr = array();
+            foreach ($info as $key => $val){
+                $savepath = $val['savepath'];
+                $savename = $val['savename'];
+                $filename = "/Public/upload/".$savepath . $savename;
+                $filenameArr[$key] = $filename;
+            }
+            return $filenameArr;
+        }
+    }   
 }

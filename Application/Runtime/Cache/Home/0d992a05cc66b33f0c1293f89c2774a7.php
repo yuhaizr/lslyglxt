@@ -23,7 +23,7 @@
     
 
 	<script type="text/javascript">
-	var __URL = '/lslyglxt/index.php/Home/Role';
+	var __URL = '/lslyglxt/index.php/Home/User';
 	var __APP = '/lslyglxt/index.php';
 	var __PUBLIC = '/lslyglxt/Public';
 	var __AJAX;
@@ -352,39 +352,86 @@
                  </div></div>
                  </div><?php endif; ?>
         		
-
-<div class="row">
-         
-       <div class="tab-content tabs-flat">
-           <div id="home11" class="tab-pane in active">
-            <h6>当前用户组</h6>
-            <form action="/lslyglxt/index.php/Home/Role/useraddrole" method="post" id="roleuserForm">
-               <select style="width:100%;" name="role" id="role" onchange="dochangerole()">
-                       <?php if(is_array($Roleinfodata)): foreach($Roleinfodata as $key=>$value): ?><option value="<?php echo ($value["id"]); ?>" <?php if($value["roleselect"] == 1): ?>selected<?php endif; ?> /><?php echo ($value["name"]); endforeach; endif; ?>
-                 </select>
-          </div>
-       </div>
-       <div class="col-lg-15 col-sm-15 col-xs-15">
-               <div class="widget flat radius-bordered">
-                   <div class="widget-body bordered-bottom bordered-darkorange">
-                       <h5>Checkboxes</h5>
-                        	<div class="row">
-                        	<?php if(is_array($nodelist)): foreach($nodelist as $key=>$value): ?><div class="col-lg-4 col-sm-4 col-xs-4">
-                                 <div class="checkbox">
-                                     <label>
-                                         <input type="checkbox" name="user[]" value="<?php echo ($value["id"]); ?>" <?php if($value["selected"] == 1): ?>checked="checked"<?php endif; ?>>
-                                         <span class="text"><?php echo ($value["account"]); ?> <?php echo ($value["nickname"]); ?></span>
-                                     </label>
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">编辑用户</span>
+                         </div>
+                         <div class="widget-body">
+                             <form id="registrationForm" action="/lslyglxt/index.php/Home/User/useredit" method="post" class="form-horizontal bv-form" data-bv-message="This value is not valid" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" novalidate="novalidate">
+                      
+              <!--                    <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">账号</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="account" required="required" value = "<?php echo ($userinfo["account"]); ?>">
+                                     </div>
+                                 </div> -->
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">昵　　称</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="nickname" value = "<?php echo ($userinfo["nickname"]); ?>">
+                                         
+                                     </div>
                                  </div>
-       						         </div><?php endforeach; endif; ?> 
-                        	</div>
-                        		<button type="submit" class="btn btn-blue" onclick="useraddrole()">Submit</button>
-                       	</form>
-                    </div>
-                </div>
-       </div> 
-</div>              
+                 <!--                  <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">角色</label>
+                                     <div class="col-lg-4">
+                            			 <select  id="role_id" name="role_id" style="width:100%">
+                                           	    <option value=''/>请选择角色
+												<?php if(is_array($roleList)): foreach($roleList as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" <?php echo ($role_select[$vo['id']]); ?>/><?php echo ($vo["name"]); endforeach; endif; ?>
+										</select>
+                                     </div>
+                                 </div>  -->                           	 
+       
+                             
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">原　密  码(修改密码时必填)</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="oldpassword"  >
+                                     </div>
+                                 </div>
+                              
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">新　密  码(修改密码时必填)</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="password" >
+                                         
+                                     </div>
+                                 </div>
 
+
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">是否启用</label>
+                                     <div class="col-lg-8">
+                                         <input class="checkbox-slider slider-icon yesno" value="1" name="status" checked="checked" type="checkbox"><span class="text"></span></div>
+                                 </div>
+
+                                 <div class="form-group has-feedback">
+                                     <label class="col-lg-4 control-label">备注说明</label>
+                                     <div class="col-lg-4">
+                                         <input type="text" class="form-control" name="remark"  value = "<?php echo ($userinfo["remark"]); ?>">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <div class="col-lg-offset-5 col-lg-8">
+                                         <input class="btn btn-palegreen" type="submit" value="保存">
+                                     </div>
+                                 </div>
+                                 <input type="hidden" name="id" value="<?php echo ($userinfo["id"]); ?>"/>
+                             </form>
+                         </div>
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
+
+ 
         		</div>
 				<!-- /Page Body -->
 			</div>
@@ -425,19 +472,14 @@
 
 <!--Beyond Scripts-->
 <script src="/lslyglxt/Public/js/beyond.min.js"></script>
+<script src="/lslyglxt/Public/js/select2/select2.js"></script>   
  <!--Page Related Scripts-->
 <script src="/lslyglxt/Public/js/validation/bootstrapValidator.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
+	$("#role_id").select2();
     //$("#registrationForm").bootstrapValidator();
 });
-function useraddrole(){
-	$("#roleuserForm").submit();
-}
-function dochangerole(){
-	var val  = $("#role").find("option:selected").val();
-	window.location.href=__URL+"/roleUserList?id="+val;
-}
 </script>
 
 

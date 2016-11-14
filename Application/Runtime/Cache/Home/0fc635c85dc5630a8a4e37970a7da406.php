@@ -23,7 +23,7 @@
     
 
 	<script type="text/javascript">
-	var __URL = '/lslyglxt/index.php/Home/Role';
+	var __URL = '/lslyglxt/index.php/Home/Visitors';
 	var __APP = '/lslyglxt/index.php';
 	var __PUBLIC = '/lslyglxt/Public';
 	var __AJAX;
@@ -352,39 +352,69 @@
                  </div></div>
                  </div><?php endif; ?>
         		
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">人流量信息</span>      
+                         </div>
+                         <div class="widget-body">
+                          
+    
+    					<!--  <form action="/lslyglxt/index.php/Home/Visitors/save" method="post"  > --><!--enctype="multipart/form-data"  -->
+    					 				<?php if(!empty($info)): ?><input type="hidden" class="form-control" required="required"  name="id" value="<?php echo ($info["id"]); ?>" ><?php endif; ?>
+					        
+					        			<div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;" >日期</label>
+		                                     <div class="col-lg-3">
+		                                   
+		                                         <input type="text" class="form-control " required="required"  name="date" id="date"  readonly="readonly" value="<?php echo ($info["date"]); ?>"  > 
+		                                     </div>
+					                    </div>
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">景点</label>
+		                                     <div class="col-lg-3">
+		                                              <select  readonly="readonly" required="required"   id="scenic_spot_id" name='scenic_spot_id' style="width:100%;">
+							          		   				
+							                           		<?php if(is_array($scenic_spot_list)): foreach($scenic_spot_list as $key=>$vo): ?><option <?php if($vo['id'] == $info['scenic_spot_id'] ): ?>selected = "selected"<?php endif; ?>   value="<?php echo ($vo["id"]); ?>" ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>         
+							                          </select>  
+		                                         
+		                                     </div>
+					     
+				 
+					                    </div>
+					  
+					          				                    
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;" >人流量</label>
+		                                     <div class="col-lg-3">
+		                                   
+		                                         <input  readonly="readonly" type="text" class="form-control" required="required"  name="totalnum" id="totalnum"  value="<?php echo ($info["totalnum"]); ?>"  onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> 
+		                                     </div>
+					                    </div>
+					                     
+					          		                    
+		
+					                    <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
+					                    	<div class='col-lg-4 col-lg-offset-5'>
+					                    	<input  readonly="readonly" class="btn btn-palegreen" type="submit" id="saveRecord" value="保存人流量信息">
+					                    	</div>
+					                    </div>
+					               		<!-- </form> -->
+    
+    
+    
+    
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
 
-<div class="row">
-         
-       <div class="tab-content tabs-flat">
-           <div id="home11" class="tab-pane in active">
-            <h6>当前用户组</h6>
-            <form action="/lslyglxt/index.php/Home/Role/useraddrole" method="post" id="roleuserForm">
-               <select style="width:100%;" name="role" id="role" onchange="dochangerole()">
-                       <?php if(is_array($Roleinfodata)): foreach($Roleinfodata as $key=>$value): ?><option value="<?php echo ($value["id"]); ?>" <?php if($value["roleselect"] == 1): ?>selected<?php endif; ?> /><?php echo ($value["name"]); endforeach; endif; ?>
-                 </select>
-          </div>
-       </div>
-       <div class="col-lg-15 col-sm-15 col-xs-15">
-               <div class="widget flat radius-bordered">
-                   <div class="widget-body bordered-bottom bordered-darkorange">
-                       <h5>Checkboxes</h5>
-                        	<div class="row">
-                        	<?php if(is_array($nodelist)): foreach($nodelist as $key=>$value): ?><div class="col-lg-4 col-sm-4 col-xs-4">
-                                 <div class="checkbox">
-                                     <label>
-                                         <input type="checkbox" name="user[]" value="<?php echo ($value["id"]); ?>" <?php if($value["selected"] == 1): ?>checked="checked"<?php endif; ?>>
-                                         <span class="text"><?php echo ($value["account"]); ?> <?php echo ($value["nickname"]); ?></span>
-                                     </label>
-                                 </div>
-       						         </div><?php endforeach; endif; ?> 
-                        	</div>
-                        		<button type="submit" class="btn btn-blue" onclick="useraddrole()">Submit</button>
-                       	</form>
-                    </div>
-                </div>
-       </div> 
-</div>              
-
+ 
         		</div>
 				<!-- /Page Body -->
 			</div>
@@ -419,25 +449,53 @@
     
     <link href="/lslyglxt/Public/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
     
+<link href="/lslyglxt/Public/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
 <!--Basic Scripts-->
 <script src="/lslyglxt/Public/js/jquery-2.0.3.min.js"></script>
 <script src="/lslyglxt/Public/js/bootstrap.min.js"></script>
 
 <!--Beyond Scripts-->
 <script src="/lslyglxt/Public/js/beyond.min.js"></script>
- <!--Page Related Scripts-->
-<script src="/lslyglxt/Public/js/validation/bootstrapValidator.js"></script>
+<script src="/lslyglxt/Public/js/select2/select2.js"></script>
+<script src="/lslyglxt/Public/js/datetime/bootstrap-timepicker.js"></script>  
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datepicker.js"></script>
+
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datetimepicker.js"></script>
+<style type="text/css">
+	.select2-container{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+</style>
 <script type="text/javascript">
-$(document).ready(function () {
-    //$("#registrationForm").bootstrapValidator();
+
+	$(function(){
+		$('#start_time').timepicker({'showMeridian':false});
+		$('#end_time').timepicker({'showMeridian':false});
+	});
+
+	$("#scenic_spot_id").select2();
+
+	$('.yearView').datetimepicker({
+		autoclose: true,
+		startView:2,minView:2,
+        lang:"ch",           
+        format:"yyyy-mm-dd",      
+        timepicker:false,  
+    
+        minDate: 0,   
+  
+        });
+	
+$(".bfjl_img").click(function(){
+	//window.open($(this).attr('file'),'_blank');
+	var filepath = $(this).attr("file");
+	location.href = "/lslyglxt/Home/Upload/downFile?filepath="+filepath;
 });
-function useraddrole(){
-	$("#roleuserForm").submit();
-}
-function dochangerole(){
-	var val  = $("#role").find("option:selected").val();
-	window.location.href=__URL+"/roleUserList?id="+val;
-}
+
+
+
 </script>
 
 

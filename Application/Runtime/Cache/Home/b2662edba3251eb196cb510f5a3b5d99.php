@@ -8,19 +8,19 @@
     <meta name="description" content="<?php echo ($page_description); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> 
 
     <!--Basic Styles-->
     <link href="/lslyglxt/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> 
 
     <!--Beyond styles-->
     <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> 
     <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
     <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" />
-    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+    
 
 	<script type="text/javascript">
 	var __URL = '/lslyglxt/index.php/Home/Visitors';
@@ -204,7 +204,7 @@
                                 <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                         
                                     <!--Theme Selector Area-->
-                                    <li class="theme-area">
+<!--                                     <li class="theme-area">
                                         <ul class="colorpicker" id="skin-changer">
                                             <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="/lslyglxt/Public/css/skins/blue.min.css"></a></li>
                                             <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="/lslyglxt/Public/css/skins/azure.min.css"></a></li>
@@ -219,7 +219,7 @@
                                             <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="/lslyglxt/Public/css/skins/black.min.css"></a></li>
                                             <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="/lslyglxt/Public/css/skins/deepblue.min.css"></a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <!--/Theme Selector Area-->
                                     <li class="dropdown-footer">
                                         <a href="/lslyglxt/index.php/Home/login/logout">
@@ -376,7 +376,7 @@
 					                    <div class='row'>
 				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">景点</label>
 		                                     <div class="col-lg-3">
-		                                              <select required="required"   id="scenic_spot_id" name='scenic_spot_id' style="width:100%;">
+		                                              <select required="required" disabled="disabled"  id="scenic_spot_id" name='scenic_spot_id' style="width:100%;">
 							          		   				
 							                           		<?php if(is_array($scenic_spot_list)): foreach($scenic_spot_list as $key=>$vo): ?><option <?php if($vo['id'] == $info['scenic_spot_id'] ): ?>selected = "selected"<?php endif; ?>   value="<?php echo ($vo["id"]); ?>" ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>         
 							                          </select>  
@@ -446,6 +446,8 @@
     		
     	});
     </script>
+    
+    <link href="/lslyglxt/Public/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
     
 <link href="/lslyglxt/Public/css/bootstrap-datetimepicker.css" rel="stylesheet" />
 

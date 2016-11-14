@@ -86,13 +86,13 @@
 					                    <div class='row'>
 				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">星级</label>
 		                                     <div class="col-lg-6">
-		                                         <input type="text" class="form-control"  name="start" id="start" value="{$info.start}" >
+		                                         <input type="text" class="form-control"  name="start" id="start" value="{$info.start}" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  >
 		                                     </div>
 					                    </div>	
 					                    <div class='row'>
 				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">规模</label>
 		                                     <div class="col-lg-6">
-		                                         <input type="text" class="form-control"  name="totalnum" id="totalnum" value="{$info.totalnum}" >
+		                                         <input type="text" class="form-control"  name="totalnum" id="totalnum" value="{$info.totalnum}" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  >
 		                                     </div>
 					                    </div>						                    					                    <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
 					                    	<div class='col-lg-4 col-lg-offset-5'>

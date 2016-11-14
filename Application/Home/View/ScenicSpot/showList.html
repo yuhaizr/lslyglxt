@@ -56,6 +56,7 @@
 	                            <th>开放开始时间</th>
 	                            <th>开放结束时间</th>
 	                            <th>用时参考(分钟)</th>
+	                            <th>图片</th>
 	       	                    <th style="min-width: 150px">操作</th>
 	              
 	                        </tr>
@@ -73,7 +74,12 @@
 		                            <td>{$vo.start_time}</td>
 		                            <td>{$vo.end_time}</td>
 		                            <td>{$vo.playtime}</td>
-		          
+		          					<td>
+		          					
+		          					 <notempty name="vo['imglink']">
+		                            	<img class='imgdiv' alt="单击查看大图" style="width: 100px;50px;" src="__ROOT__/{$vo['imglink']}">
+		                            </notempty>
+		          					</td>
 		                			<td>
 		                		
 		                			<a href="__URL__/detail?type=menu&id={$vo.id}" data-bb-handler="confirm" type="button"  class=" my_detail_btn btn btn-primary">详情</a>
@@ -299,6 +305,12 @@
 		}
 		
 		
+	});
+	
+	$(".imgdiv").click(function(){
+		window.open($(this).attr('src'),'_blank');
+		//var filepath = $(this).attr("file");
+		//location.href = "__ROOT__/Home/Upload/downFile?filepath="+filepath;
 	});
 
 </script>

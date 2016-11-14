@@ -23,7 +23,7 @@ class ScenicSpotModel extends BaseModel
         
         $total = $scenicSpot->where($where)->count();
         
-        $page = new Page($total,2,$paramer);
+        $page = new Page($total,20,$paramer);
         $show = $page->show();
         $list = $scenicSpot
         ->where($where)

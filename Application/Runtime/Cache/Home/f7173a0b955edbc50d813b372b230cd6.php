@@ -8,18 +8,18 @@
     <meta name="description" content="<?php echo ($page_description); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--     <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> 
 
     <!--Basic Styles-->
     <link href="/lslyglxt/Public/css/bootstrap.min.css" rel="stylesheet" />
-<!--     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> 
 
     <!--Beyond styles-->
-<!--     <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> -->
-<!--     <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" /> -->
+    <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> 
+    <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" />
     
 
 	<script type="text/javascript">
@@ -353,7 +353,93 @@
                  </div><?php endif; ?>
         		
 
-  <div class="row DTTTFooter">
+
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">景点列表</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="/lslyglxt/index.php/Home/ScenicSpot/showList" method="get" >
+   	                 <div class="search-box col-sm-3" >
+	                		<div>
+	                			<span class="input-icon">
+	                				<input type="text" name='searchValue' value="<?php echo ($searchValue); ?>" class="form-control" id="searchValue" placeholder="请输入景点名称">
+	                				<i class="glyphicon glyphicon-search circular blue"></i>
+	                			</span>
+	                		</div> 
+	                	</div>	   
+	 
+	  
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                    <thead>
+	                        <tr role="row">
+	                        	<th>序号</th>
+	                            <th>创建时间</th>
+	                            <th>名称</th>
+	                            <th>景点概况</th>
+	                            <th>交通</th>
+	                            <th>门票</th>
+	                            <th>开放开始时间</th>
+	                            <th>开放结束时间</th>
+	                            <th>用时参考(分钟)</th>
+	                            <th>图片</th>
+	       	                    <th style="min-width: 150px">操作</th>
+	              
+	                        </tr>
+	                    </thead>
+	
+	                    <tbody id="tapeListTable">
+	                    	<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
+		                            <td><?php echo ($key+1); ?></td>
+		                            <td><?php echo ($vo["ctime"]); ?></td>
+		                            <td><?php echo ($vo["name"]); ?></td>
+		                            <td><?php echo ($vo["intro"]); ?></td>
+		                            <td><?php echo ($vo["traffic"]); ?></td>
+		                            <td><?php echo ($vo["ticket"]); ?></td>
+		                            <td><?php echo ($vo["start_time"]); ?></td>
+		                            <td><?php echo ($vo["end_time"]); ?></td>
+		                            <td><?php echo ($vo["playtime"]); ?></td>
+		          					<td>
+		          					
+		          					 <?php if(!empty($vo['imglink'])): ?><img class='imgdiv' alt="单击查看大图" style="width: 100px;50px;" src="/lslyglxt/<?php echo ($vo['imglink']); ?>"><?php endif; ?>
+		          					</td>
+		                			<td>
+		                		
+		                			<a href="/lslyglxt/index.php/Home/ScenicSpot/detail?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button"  class=" my_detail_btn btn btn-primary">详情</a>
+		           					<a href="/lslyglxt/index.php/Home/ScenicSpot/modify?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button" style="display: none;" class=" my_modify_btn btn btn-primary">修改</a>
+		           					<a href="/lslyglxt/index.php/Home/ScenicSpot/del?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button"    style="display: none;" class=" my_del_btn btn btn-danger  delete">删除</a>
+		                			</td>
+		          
+		             
+		                         
+		                        </tr><?php endforeach; endif; ?>                        
+	                    </tbody>
+	                </table><br/>
+               <div class="row DTTTFooter">
 					<div class="col-sm-6">
 						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
 					</div>
@@ -366,7 +452,120 @@
 					</div>				
             	</div>  								
 	        </div>
-     
+	    </div>
+	</div>
+</div>
+
+           <div id="addRecordDiv" class="modal fade bs-example-modal-lg"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			        <div class="modal-dialog modal-lg">
+			            <div class="modal-content">
+			
+			                <div class="modal-header">
+			                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                    <h4 class="modal-title" id="mySmallModalLabel">合同信息记录</h4>
+			                </div>
+			                <div class="modal-body"> 
+			                   <!--未开户成功用户接单记录表开始  -->
+			               	   <div class="widget">
+							       <div class="widget-header ">
+							           <span class="widget-caption"></span>
+						               <div class="widget-buttons">
+						                    <a href="#" data-toggle="maximize">
+						                        <i class="fa fa-expand"></i>
+						                    </a>
+						                    <a href="#" data-toggle="collapse">
+						                        <i class="fa fa-minus"></i>
+						                    </a>
+						                    <a href="#" data-toggle="dispose">
+						                        <i class="fa fa-times"></i>
+						                    </a>
+						                </div>
+							       </div>
+						           <div class="widget-body">
+		
+					                   
+					                    
+			                		</div>
+			                	</div>
+			                	<!--未开户成功用户接单记录表结束  -->
+			                
+			                
+			                	<div class='row' id='sendMessageDiv'>
+												
+								</div>
+		
+				
+			                </div>
+							<div class="modal-footer">
+			
+							</div>			                
+			            </div>
+			        </div>
+			    </div>
+
+           <div id="addRecordTypeDiv" class="modal fade bs-example-modal-lg"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			        <div class="modal-dialog modal-lg">
+			            <div class="modal-content">
+			
+			                <div class="modal-header">
+			                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			                    <h4 class="modal-title" id="mySmallModalLabel">合同信息类型</h4>
+			                </div>
+			                <div class="modal-body"> 
+			                   <!--未开户成功用户接单记录表开始  -->
+			               	   <div class="widget">
+							       <div class="widget-header ">
+							           <span class="widget-caption"></span>
+						               <div class="widget-buttons">
+						                    <a href="#" data-toggle="maximize">
+						                        <i class="fa fa-expand"></i>
+						                    </a>
+						                    <a href="#" data-toggle="collapse">
+						                        <i class="fa fa-minus"></i>
+						                    </a>
+						                    <a href="#" data-toggle="dispose">
+						                        <i class="fa fa-times"></i>
+						                    </a>
+						                </div>
+							       </div>
+						           <div class="widget-body">
+		
+					                    <form action="/lslyglxt/index.php/Home/ScenicSpot/addContractType" method="post" >
+					        
+					                    <div class='row'>
+				 					         <label class="col-lg-4 control-label" style="height: 34px;line-height: 34px;text-align: right;">类型名称</label>
+		                                     <div class="col-lg-4">
+		                                         <input type="text" class="form-control"  name="name" id="name" >
+		                                         
+		                                     </div>
+					                    </div>
+
+					                    <div class='row'>
+					                    	<div class='col-lg-4 col-lg-offset-5'>
+					                    	<input class="btn btn-palegreen" type="submit" id='addRecordTypeButton'  value="保存类型记录">
+					                    	</div>
+					                    </div>
+					               		</form>
+					                    
+			                		</div>
+			                	</div>
+			                	<!--未开户成功用户接单记录表结束  -->
+			                
+			                
+			                	<div class='row' id='sendMessageDiv'>
+												
+								</div>
+		
+				
+			                </div>
+							<div class="modal-footer">
+			
+							</div>			                
+			            </div>
+			        </div>
+			    </div>
+
+
 
         		</div>
 				<!-- /Page Body -->
@@ -484,6 +683,12 @@
 		}
 		
 		
+	});
+	
+	$(".imgdiv").click(function(){
+		window.open($(this).attr('src'),'_blank');
+		//var filepath = $(this).attr("file");
+		//location.href = "/lslyglxt/Home/Upload/downFile?filepath="+filepath;
 	});
 
 </script>

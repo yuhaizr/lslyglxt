@@ -69,10 +69,10 @@ class SuggestionController extends BaseController
 
     private function check($data){
         if (isset($data['content']) && mbstrlen($data['content']) < 10 ){
-            $this->error('酒店名称必须大于10字');
+            $this->error('反馈意见必须大于10字');
         }
         if (isset($data['content']) && mbstrlen($data['content']) > 200 ){
-            $this->error('酒店名称必须小于200字');
+            $this->error('反馈意见必须小于200字');
         } 
 
     }

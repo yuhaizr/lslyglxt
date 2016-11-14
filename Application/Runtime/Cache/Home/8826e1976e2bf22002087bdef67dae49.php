@@ -23,7 +23,7 @@
     
 
 	<script type="text/javascript">
-	var __URL = '/lslyglxt/index.php/Home/Role';
+	var __URL = '/lslyglxt/index.php/Home/LocalProduct';
 	var __APP = '/lslyglxt/index.php';
 	var __PUBLIC = '/lslyglxt/Public';
 	var __AJAX;
@@ -352,39 +352,80 @@
                  </div></div>
                  </div><?php endif; ?>
         		
+     <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="widget radius-bordered">
+                         <div class="widget-header">
+                             <span class="widget-caption">庐山特产信息</span>      
+                         </div>
+                         <div class="widget-body">
+                          
+    
+    					 <form action="/lslyglxt/index.php/Home/LocalProduct/save" method="post"  ><!--enctype="multipart/form-data"  -->
+    					 				<?php if(!empty($info)): ?><input type="hidden" class="form-control" required="required"  name="id" value="<?php echo ($info["id"]); ?>" ><?php endif; ?>
+					        
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">特产名称</label>
+		                                     <div class="col-lg-6">
+		                                         <input type="text" class="form-control"  name="name" id="name" required="required" value="<?php echo ($info["name"]); ?>" >
+		                                         
+		                                     </div>
+					     
+				 
+					                    </div>
+					  
+	
+					                     <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">特产介绍</label>
+		                                     <div class="col-lg-6">
+		                      
+		                                         <textarea name='intro' id='intro' rows="10" cols="100" ><?php echo ($info["intro"]); ?></textarea>
+		                                         
+		                                     </div>
+					      				 </div>	
+					                     <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">最佳产地</label>
+		                                     <div class="col-lg-6">
+		                      
+		                                         <textarea name='best_produc_area' id='best_produc_area' rows="10" cols="100" ><?php echo ($info["best_produc_area"]); ?></textarea>
+		                                         
+		                                     </div>
+					      				 </div>						                    
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;" >均价</label>
+		                                     <div class="col-lg-3">
+		                                   
+		                                         <input type="text" class="form-control"  name="average_price" id="average_price"  value="<?php echo ($info["average_price"]); ?>"  onkeyup="value=value.replace(/[^\d+\.]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d+\.]/g,''))"> 
+		                                     </div>
+					                    </div>
+					                     
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">单位</label>
+		                                     <div class="col-lg-6">
+		                                         <input type="text" class="form-control"  name="unit" id="unit"  value="<?php echo ($info["unit"]); ?>" >
+		                                     </div>
+					                    </div>			                    
+		
+					                    <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
+					                    	<div class='col-lg-4 col-lg-offset-5'>
+					                    	<input class="btn btn-palegreen" type="submit" id="saveRecord" value="保存庐山特产信息">
+					                    	</div>
+					                    </div>
+					               		</form>
+    
+    
+    
+    
+                     </div>
+                 </div>                 
+             </div>
+             
+         </div>
+     </div>
 
-<div class="row">
-         
-       <div class="tab-content tabs-flat">
-           <div id="home11" class="tab-pane in active">
-            <h6>当前用户组</h6>
-            <form action="/lslyglxt/index.php/Home/Role/useraddrole" method="post" id="roleuserForm">
-               <select style="width:100%;" name="role" id="role" onchange="dochangerole()">
-                       <?php if(is_array($Roleinfodata)): foreach($Roleinfodata as $key=>$value): ?><option value="<?php echo ($value["id"]); ?>" <?php if($value["roleselect"] == 1): ?>selected<?php endif; ?> /><?php echo ($value["name"]); endforeach; endif; ?>
-                 </select>
-          </div>
-       </div>
-       <div class="col-lg-15 col-sm-15 col-xs-15">
-               <div class="widget flat radius-bordered">
-                   <div class="widget-body bordered-bottom bordered-darkorange">
-                       <h5>Checkboxes</h5>
-                        	<div class="row">
-                        	<?php if(is_array($nodelist)): foreach($nodelist as $key=>$value): ?><div class="col-lg-4 col-sm-4 col-xs-4">
-                                 <div class="checkbox">
-                                     <label>
-                                         <input type="checkbox" name="user[]" value="<?php echo ($value["id"]); ?>" <?php if($value["selected"] == 1): ?>checked="checked"<?php endif; ?>>
-                                         <span class="text"><?php echo ($value["account"]); ?> <?php echo ($value["nickname"]); ?></span>
-                                     </label>
-                                 </div>
-       						         </div><?php endforeach; endif; ?> 
-                        	</div>
-                        		<button type="submit" class="btn btn-blue" onclick="useraddrole()">Submit</button>
-                       	</form>
-                    </div>
-                </div>
-       </div> 
-</div>              
-
+ 
         		</div>
 				<!-- /Page Body -->
 			</div>
@@ -419,25 +460,53 @@
     
     <link href="/lslyglxt/Public/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
     
+<link href="/lslyglxt/Public/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
 <!--Basic Scripts-->
 <script src="/lslyglxt/Public/js/jquery-2.0.3.min.js"></script>
 <script src="/lslyglxt/Public/js/bootstrap.min.js"></script>
 
 <!--Beyond Scripts-->
 <script src="/lslyglxt/Public/js/beyond.min.js"></script>
- <!--Page Related Scripts-->
-<script src="/lslyglxt/Public/js/validation/bootstrapValidator.js"></script>
+<script src="/lslyglxt/Public/js/select2/select2.js"></script>
+<script src="/lslyglxt/Public/js/datetime/bootstrap-timepicker.js"></script>  
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datepicker.js"></script>
+
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datetimepicker.js"></script>
+<style type="text/css">
+	.select2-container{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+</style>
 <script type="text/javascript">
-$(document).ready(function () {
-    //$("#registrationForm").bootstrapValidator();
+
+	$(function(){
+		$('#start_time').timepicker({'showMeridian':false});
+		$('#end_time').timepicker({'showMeridian':false});
+	});
+
+
+
+	$('.yearView').datetimepicker({
+		autoclose: true,
+		startView:3,minView:3,
+        lang:"ch",           
+        format:"yyyy-mm",      
+        timepicker:false,  
+    
+        minDate: 0,   
+  
+        });
+	
+$(".bfjl_img").click(function(){
+	//window.open($(this).attr('file'),'_blank');
+	var filepath = $(this).attr("file");
+	location.href = "/lslyglxt/Home/Upload/downFile?filepath="+filepath;
 });
-function useraddrole(){
-	$("#roleuserForm").submit();
-}
-function dochangerole(){
-	var val  = $("#role").find("option:selected").val();
-	window.location.href=__URL+"/roleUserList?id="+val;
-}
+
+
+
 </script>
 
 

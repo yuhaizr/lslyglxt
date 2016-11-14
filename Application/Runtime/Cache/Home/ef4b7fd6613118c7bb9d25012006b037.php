@@ -8,19 +8,19 @@
     <meta name="description" content="<?php echo ($page_description); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> 
 
     <!--Basic Styles-->
     <link href="/lslyglxt/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> 
 
     <!--Beyond styles-->
     <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> 
     <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
     <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" />
-    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+    
 
 	<script type="text/javascript">
 	var __URL = '/lslyglxt/index.php/Home/User';
@@ -204,7 +204,7 @@
                                 <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                         
                                     <!--Theme Selector Area-->
-                                    <li class="theme-area">
+<!--                                     <li class="theme-area">
                                         <ul class="colorpicker" id="skin-changer">
                                             <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="/lslyglxt/Public/css/skins/blue.min.css"></a></li>
                                             <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="/lslyglxt/Public/css/skins/azure.min.css"></a></li>
@@ -219,7 +219,7 @@
                                             <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="/lslyglxt/Public/css/skins/black.min.css"></a></li>
                                             <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="/lslyglxt/Public/css/skins/deepblue.min.css"></a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <!--/Theme Selector Area-->
                                     <li class="dropdown-footer">
                                         <a href="/lslyglxt/index.php/Home/login/logout">
@@ -430,8 +430,8 @@
       		<td><?php echo ($value["status"]); ?></td>
       		
       		 <td>
-             <a href="#" onclick="jumpuseredit(<?php echo ($value["id"]); ?>)" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
-             <a href="#" onclick="jumpuserdelete(<?php echo ($value["id"]); ?>)" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+             <a href="#" onclick="jumpuseredit(<?php echo ($value["id"]); ?>)" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> 编辑</a>
+             <a href="#" onclick="jumpuserdelete(<?php echo ($value["id"]); ?>)" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> 删除</a>
             </td>
       	</tr><?php endforeach; endif; ?>
       </tbody>
@@ -547,6 +547,8 @@ $(function(){/*
     		
     	});
     </script>
+    
+    <link href="/lslyglxt/Public/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
     
 <!--Basic Scripts-->
 <script src="/lslyglxt/Public/js/jquery-2.0.3.min.js"></script>

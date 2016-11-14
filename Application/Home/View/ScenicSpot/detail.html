@@ -81,7 +81,17 @@
 					     
 				 
 					                    </div>
-					                    				                    
+					                    <div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">景点图片</label>
+		                                     <div class="col-lg-2">
+		                                         <input type="file" class="form-control"  name="imglink"  >
+		                                     </div>
+		                                     <notempty name="info['imglink']">
+		                                     <div class="col-lg-2">
+		                                     	<img class='imgdiv' alt="单击查看大图" style="width: 150px;100px;" src="__ROOT__/{$info['imglink']}">
+		                                     </div>
+		                                     </notempty>
+					                    </div>					                    
 		
 					         <!--            <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
 					                    	<div class='col-lg-4 col-lg-offset-5'>

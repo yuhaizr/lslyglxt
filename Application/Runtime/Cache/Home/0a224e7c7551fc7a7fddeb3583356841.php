@@ -23,7 +23,7 @@
     
 
 	<script type="text/javascript">
-	var __URL = '/lslyglxt/index.php/Home/Role';
+	var __URL = '/lslyglxt/index.php/Home/LocalProduct';
 	var __APP = '/lslyglxt/index.php';
 	var __PUBLIC = '/lslyglxt/Public';
 	var __AJAX;
@@ -353,37 +353,102 @@
                  </div><?php endif; ?>
         		
 
+
 <div class="row">
+	<div class="col-xs-12 col-md-12">
+	        <div class="widget">
+	            <div class="widget-header ">
+	                <span class="widget-caption">庐山特产列表</span>
+	                <div class="widget-buttons">
+	                    <a href="#" data-toggle="maximize">
+	                        <i class="fa fa-expand"></i>
+	                    </a>
+	                    <a href="#" data-toggle="collapse">
+	                        <i class="fa fa-minus"></i>
+	                    </a>
+	                    <a href="#" data-toggle="dispose">
+	                        <i class="fa fa-times"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="widget-body">
+	      			<div class="table-toolbar row">
+	      			<form action="/lslyglxt/index.php/Home/LocalProduct/showList" method="get" >
+   	                 <div class="search-box col-sm-3" >
+	                		<div>
+	                			<span class="input-icon">
+	                				<input type="text" name='searchValue' value="<?php echo ($searchValue); ?>" class="form-control" id="searchValue" placeholder="请输入特产名称或者最佳产地">
+	                				<i class="glyphicon glyphicon-search circular blue"></i>
+	                			</span>
+	                		</div> 
+	                	</div>	   
+	 
+	  
+
+	                	<div class="col-sm-1">
+	                		<input class="btn btn-palegreen" type="submit" id="search" value="搜索">
+	                	</div>      
+	                	</form>
+	                	
+	              
+	           
+	                </div>
+		         
+	                <table class="table table-striped table-hover table-bordered" id="editabledatatable">
+	                    <thead>
+	                        <tr role="row">
+	                        	<th>序号</th>
+	                            <th>创建时间</th>
+	                            <th>名称</th>
+	                            <th>介绍</th>
+	                            <th>最佳产地</th>
+	                            <th>均价</th>
+	                            <th>单位</th>
+	       	                    <th style="min-width: 150px">操作</th>
+	              
+	                        </tr>
+	                    </thead>
+	
+	                    <tbody id="tapeListTable">
+	                    	<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
+		                            <td><?php echo ($key+1); ?></td>
+		                            <td><?php echo ($vo["ctime"]); ?></td>
+		                            <td><?php echo ($vo["name"]); ?></td>
+		                            <td><?php echo ($vo["intro"]); ?></td>
+		                            <td><?php echo ($vo["best_produc_area"]); ?></td>
+		                            <td><?php echo ($vo["average_price"]); ?></td>
+		                            <td><?php echo ($vo["unit"]); ?></td>
+
+		                			<td>
+		                		
+		                			<a href="/lslyglxt/index.php/Home/LocalProduct/detail?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button"  class=" my_detail_btn btn btn-primary">详情</a>
+		           					<a href="/lslyglxt/index.php/Home/LocalProduct/modify?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button" style="display: none;" class=" my_modify_btn btn btn-primary">修改</a>
+		           					<a href="/lslyglxt/index.php/Home/LocalProduct/del?type=menu&id=<?php echo ($vo["id"]); ?>" data-bb-handler="confirm" type="button"    style="display: none;" class=" my_del_btn btn btn-danger  delete">删除</a>
+		                			</td>
+		          
+		             
+		                         
+		                        </tr><?php endforeach; endif; ?>                        
+	                    </tbody>
+	                </table><br/>
+               <div class="row DTTTFooter">
+					<div class="col-sm-6">
+						<div class="dataTables_info" id="simpledatatable_info" role="alert" aria-live="polite" aria-relevant="all"></div>
+					</div>
+					<div class="col-sm-8 pull-right">
+						<div class="dataTables_paginate paging_bootstrap" id="simpledatatable_paginate">
+							<ul class="pagination" id="pageUl">
+								<?php echo ($page); ?>
+							</ul>
+						</div>
+					</div>				
+            	</div>  								
+	        </div>
+	    </div>
+	</div>
+</div>
+
          
-       <div class="tab-content tabs-flat">
-           <div id="home11" class="tab-pane in active">
-            <h6>当前用户组</h6>
-            <form action="/lslyglxt/index.php/Home/Role/useraddrole" method="post" id="roleuserForm">
-               <select style="width:100%;" name="role" id="role" onchange="dochangerole()">
-                       <?php if(is_array($Roleinfodata)): foreach($Roleinfodata as $key=>$value): ?><option value="<?php echo ($value["id"]); ?>" <?php if($value["roleselect"] == 1): ?>selected<?php endif; ?> /><?php echo ($value["name"]); endforeach; endif; ?>
-                 </select>
-          </div>
-       </div>
-       <div class="col-lg-15 col-sm-15 col-xs-15">
-               <div class="widget flat radius-bordered">
-                   <div class="widget-body bordered-bottom bordered-darkorange">
-                       <h5>Checkboxes</h5>
-                        	<div class="row">
-                        	<?php if(is_array($nodelist)): foreach($nodelist as $key=>$value): ?><div class="col-lg-4 col-sm-4 col-xs-4">
-                                 <div class="checkbox">
-                                     <label>
-                                         <input type="checkbox" name="user[]" value="<?php echo ($value["id"]); ?>" <?php if($value["selected"] == 1): ?>checked="checked"<?php endif; ?>>
-                                         <span class="text"><?php echo ($value["account"]); ?> <?php echo ($value["nickname"]); ?></span>
-                                     </label>
-                                 </div>
-       						         </div><?php endforeach; endif; ?> 
-                        	</div>
-                        		<button type="submit" class="btn btn-blue" onclick="useraddrole()">Submit</button>
-                       	</form>
-                    </div>
-                </div>
-       </div> 
-</div>              
 
         		</div>
 				<!-- /Page Body -->
@@ -419,26 +484,32 @@
     
     <link href="/lslyglxt/Public/css/skins/blue.min.css" rel="stylesheet"  type="text/css" />
     
+<link href="/lslyglxt/Public/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
 <!--Basic Scripts-->
 <script src="/lslyglxt/Public/js/jquery-2.0.3.min.js"></script>
 <script src="/lslyglxt/Public/js/bootstrap.min.js"></script>
 
 <!--Beyond Scripts-->
 <script src="/lslyglxt/Public/js/beyond.min.js"></script>
- <!--Page Related Scripts-->
-<script src="/lslyglxt/Public/js/validation/bootstrapValidator.js"></script>
+<script src="/lslyglxt/Public/js/select2/select2.js"></script>  
+
+<!--Bootstrap Date Picker-->
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datepicker.js"></script>
+<script src="/lslyglxt/Public/js/datetime/bootstrap-datetimepicker.js"></script>
+
+<!--Bootstrap Time Picker-->
+<script src="/lslyglxt/Public/js/datetime/bootstrap-timepicker.js"></script>
+
 <script type="text/javascript">
-$(document).ready(function () {
-    //$("#registrationForm").bootstrapValidator();
-});
-function useraddrole(){
-	$("#roleuserForm").submit();
-}
-function dochangerole(){
-	var val  = $("#role").find("option:selected").val();
-	window.location.href=__URL+"/roleUserList?id="+val;
-}
+
+
+	
+
+
 </script>
+
+
 
 
 </body>

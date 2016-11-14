@@ -8,16 +8,16 @@
     <meta name="description" content="<?php echo ($page_description); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/lslyglxt/Public/img/favicon.png" type="image/x-icon"> 
 
     <!--Basic Styles-->
     <link href="/lslyglxt/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/font-awesome.min.css" rel="stylesheet" /> 
 
     <!--Beyond styles-->
     <link id="beyond-link" href="/lslyglxt/Public/css/beyond.min.css" rel="stylesheet" />
-    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" />
+    <link href="/lslyglxt/Public/css/demo.min.css" rel="stylesheet" /> 
     <link href="/lslyglxt/Public/css/animate.min.css" rel="stylesheet" />
     <link href="/lslyglxt/Public/css/load.css" rel="stylesheet" />
     
@@ -363,7 +363,7 @@
                          <div class="widget-body">
                           
     
-    					 <form action="/lslyglxt/index.php/Home/ScenicSpot/add" method="post"  ><!--enctype="multipart/form-data"  -->
+    					 <form action="/lslyglxt/index.php/Home/ScenicSpot/add" method="post" enctype="multipart/form-data"  ><!-- -->
     					 				<?php if(!empty($info)): ?><input type="hidden" class="form-control"  name="id" value="<?php echo ($info["id"]); ?>" ><?php endif; ?>
 					        
 					                    <div class='row'>
@@ -430,7 +430,15 @@
 				 
 					                    </div>
 					                    				                    
-		
+			                    		<div class='row'>
+				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">酒店图片</label>
+		                                     <div class="col-lg-2">
+		                                         <input type="file" class="form-control"  name="imglink"  >
+		                                     </div>
+		                                     <?php if(!empty($info['imglink'])): ?><div class="col-lg-2">
+		                                     	<img class='imgdiv' alt="单击查看大图" style="width: 150px;100px;" src="/lslyglxt/<?php echo ($info['imglink']); ?>">
+		                                     </div><?php endif; ?>
+					                    </div>			
 					                    <div class='row' style="margin-top: 20px;margin-bottom: 20px;">
 					                    	<div class='col-lg-4 col-lg-offset-5'>
 					                    	<input class="btn btn-palegreen" type="submit" id="saveRecord" value="保存景点信息">
@@ -517,7 +525,11 @@ $(".bfjl_img").click(function(){
 	var filepath = $(this).attr("file");
 	location.href = "/lslyglxt/Home/Upload/downFile?filepath="+filepath;
 });
-
+$(".imgdiv").click(function(){
+	window.open($(this).attr('src'),'_blank');
+	//var filepath = $(this).attr("file");
+	//location.href = "/lslyglxt/Home/Upload/downFile?filepath="+filepath;
+});
 
 
 </script>

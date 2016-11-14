@@ -18,8 +18,8 @@ class SuggestionModel extends BaseModel
         
         $userModel = new UserModel();
         $role_ids = $userModel->getRoleIdsByUserId($_SESSION['authId']);
-        if (!in_array('1', $role_ids)){
-            $where['uid'] = $_SESSION['authId'];
+        if (!in_array('1', $role_ids) && !in_array('2', $role_ids)){
+            $where['cuid'] = $_SESSION['authId'];
         }
         
         $where['is_valid'] = '1';

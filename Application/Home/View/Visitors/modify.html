@@ -28,7 +28,7 @@
 					                    <div class='row'>
 				 					         <label class="col-lg-2 control-label" style="height: 34px;line-height: 34px;text-align: right;">景点</label>
 		                                     <div class="col-lg-3">
-		                                              <select required="required"   id="scenic_spot_id" name='scenic_spot_id' style="width:100%;">
+		                                              <select required="required" disabled="disabled"  id="scenic_spot_id" name='scenic_spot_id' style="width:100%;">
 							          		   				
 							                           		<foreach name="scenic_spot_list" item="vo" key="key">
 							                                  <option <if condition="$vo['id'] eq $info['scenic_spot_id']  " > selected = "selected" </if>   value="{$vo.id}" >{$vo.name}</option>

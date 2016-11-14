@@ -264,7 +264,7 @@ class RoleController extends BaseController
         $where['role_id'] = $id;
         $where['pid '] = $actionId;
         $where['level '] = 2;
-        $list = $access->where($where)->select();
+        $list = $access->where($where)->order(" node_id DESC ")->select();
         $myActionlist = array();
         if($list){
             foreach  ($list as $key => $val){
